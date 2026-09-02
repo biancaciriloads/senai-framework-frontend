@@ -1,0 +1,97 @@
+# Resumo da Aula 03: Projetos com Frameworks Front-end
+**Instituição:** SENAI  
+**Disciplina:** Frameworks Front-end  
+**Professor:** Me. Deivison S. Takatu  
+
+---
+
+## 1. Sumário da Aula
+- Introdução aos Frameworks Front-end e Diferença entre Framework e Biblioteca
+- Visão Geral dos Principais Frameworks: React, Vue, Angular e Next.js
+- Características e Componentização de Projetos Front-end
+- Criação, Estrutura de Pastas e Comandos de Inicialização para cada Tecnologia
+- Importação e Busca de Projetos Modelos (GitHub, Vercel, CodeSandbox)
+- Atividade Prática em Grupo
+
+---
+
+## 2. Introdução aos Frameworks Front-end
+Um **framework front-end** é um conjunto de ferramentas, bibliotecas e convenções estruturais que padronizam e aceleram a criação de interfaces web complexas.
+
+### Comparativo: Vanilla JS vs. Frameworks
+- **Sem Framework (Vanilla JS):** Código puramente manual, manutenção complexa, código repetitivo e maior propensão a falhas estruturais.
+- **Com Framework:** Utilização de componentes reutilizáveis, gerenciamento nativo de estado e atualizações de tela altamente eficientes.
+
+### Framework vs. Biblioteca
+| Critério | Biblioteca (Ex: React) | Framework (Ex: Angular) |
+| :--- | :--- | :--- |
+| **Inversão de Controle** | O desenvolvedor controla quando chamar as funções. | O framework controla o fluxo (*Inversion of Control*). |
+| **Estrutura** | Flexível, sem imposições rígidas de arquitetura. | Possui estrutura bem definida e padronizada. |
+
+---
+
+## 3. Principais Frameworks e Ecossistemas
+
+### 🚀 React (Biblioteca)
+- **Origem:** Desenvolvido pelo Facebook (2013).
+- **Conceitos Chave:** Baseado em componentes, utiliza **JSX** (mistura de HTML com JavaScript em `camelCase`) e o **Virtual DOM** (cópia otimizada do DOM real que aplica apenas as diferenças necessárias, garantindo alta performance).
+- **Hooks Principais:** `useState` (gerenciamento de estado local) e `useEffect` (efeitos colaterais e chamadas de API).
+- **Comando de Criação:** `npx create-react-app <nome>` ou inicialização com Vite/Next.
+
+### 🅰️ Angular (Framework Completo)
+- **Origem:** Desenvolvido pelo Google.
+- **Características:** Framework robusto voltado para SPAs (*Single Page Applications*), utilizando **TypeScript** de forma nativa e arquitetura baseada em módulos e injeção de dependências.
+- **Comandos CLI:**
+  ```bash
+  npm install -g @angular/cli
+  ng new meu-app-angular
+  ng serve
+  ```
+
+### 💚 Vue.js (Framework Progressivo)
+- **Características:** Altamente adaptável, com curva de aprendizado suave e excelente performance. Utiliza o conceito de *Single-File Components* (`.SFC` com arquivos `.vue` que unificam HTML, CSS e JavaScript).
+- **Comandos de Criação:**
+  ```bash
+  npm create vue@latest
+  npm install
+  npm run dev
+  ```
+
+### 🔺 Next.js (Framework Full-stack baseado em React)
+- **Recursos Adicionais:** Roteamento baseado em arquivos, renderização no servidor (*Server-Side Rendering* / SSR), Server Components, otimização automática de imagens/fontes e recursos de backend integrados.
+- **Comando de Criação:** `npx create-next-app@latest meu-projeto`
+
+---
+
+## 4. Características Comuns dos Frameworks
+- **Componentização:** Blocos independentes e reutilizáveis que encapsulam lógica e design.
+- **Programação Reativa:** Atualização automática da interface em resposta a alterações de estado.
+- **Ferramentas de Build e Bundling:** Minificação, transpilação e compactação otimizada para navegadores.
+- **Sistema de Rotas e Integração com APIs:** Gerenciamento nativo de navegação SPA e chamadas assíncronas.
+
+---
+
+## 5. Importação e Busca de Projetos Prontos
+Para acelerar o desenvolvimento, a comunidade disponibiliza centenas de templates open source utilizando repositórios e plataformas como:
+- **GitHub:** Utilizando clonagem de repositórios via `git clone <url>`.
+- **Vercel Templates:** Modelos prontos para deploy instantâneo.
+- **CodeSandbox:** Plataforma de desenvolvimento em nuvem para templates interativos.
+
+---
+
+## 6. Atividade Prática Proposta
+Desenvolver em grupo **quatro projetos Web sobre o mesmo tema**, aplicando diferentes tecnologias, além de uma importação de repositório externo. As entregas exigidas são:
+1. **Projeto 01:** Desenvolvido em **React**.
+2. **Projeto 02:** Desenvolvido em **Vue.js**.
+3. **Projeto 03:** Desenvolvido em **Angular**.
+4. **Projeto 04:** Desenvolvido em **Next.js**.
+5. **Projeto 05:** Cópia/importação de um projeto a partir de um repositório modelo externo.
+
+*Requisitos:* Todos os projetos devem ser versionados com Git, enviados para repositórios no GitHub com histórico de commits, e acompanhados por um relatório comparativo entre as tecnologias abordadas.
+
+---
+
+## 7. Referências Bibliográficas Principais
+- SOUZA, Natan. *Bootstrap 4: conheça a biblioteca front-end mais utilizada no mundo.* São Paulo: Casa do Código, 2018.
+- MACHADO, Kheronn Khennedy. *Angular 11 e Firebase...* São Paulo: Casa do Código, 2021.
+- EIS, Diego. *Guia Front-end: o caminho das pedras para ser um dev front-end.* São Paulo: Casa do Código, 2015.
