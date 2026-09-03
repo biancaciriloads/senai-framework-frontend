@@ -9,6 +9,18 @@
 Este documento (`README.md`) consolida os resumos, conceitos práticos e diretrizes de todas as aulas ministradas ao longo do semestre na disciplina de **Frameworks Front-end**. O repositório foi estruturado em grupo para centralizar o histórico de atividades, códigos-fonte de projetos e documentações técnicas.
 
 ---
+## 🔗 Portfólio de Projetos e Atividades Publicadas
+Abaixo estão listados os links de acesso direto aos deploys das aplicações desenvolvidas ao longo das aulas, organizados por tecnologia e atividade:
+
+| Atividade / Projeto      | Tecnologia              | Link de Acesso (Deploy)                                                      |
+
+| **Atividade Prática 01** | Vanilla JS / HTML / CSS | [Acessar Projeto (Vercel)](https://senai-projeto-vanilla-js-rho.vercel.app/) |
+| **Projeto React**        | React.js                | [Acessar Projeto (Vercel)](https://projeto-react-01-three.vercel.app/)       |
+| **Projeto Vue.js**       | Vue.js (Vite)           | [Acessar Projeto (Vercel)](https://meu-projeto-vue-pi.vercel.app/)           |
+| **Projeto Angular**      | Angular / TypeScript    | [Acessar Projeto (Vercel)](https://meu-app-angular-1.vercel.app/)            |
+| **Projeto Next.js**      | Next.js (Full-stack)    | [Acessar Projeto (Vercel)](https://projeto-next-sooty.vercel.app/)           |
+
+---
 
 ## 📋 Sumário Geral das Aulas
 - [Aula 01: Apresentação da Disciplina e Contextualização](#aula-01---apresentação-da-disciplina-e-contextualização)
