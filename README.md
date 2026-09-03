@@ -12,13 +12,13 @@ Este documento (`README.md`) consolida os resumos, conceitos práticos e diretri
 ## 🔗 Portfólio de Projetos e Atividades Publicadas
 Abaixo estão listados os links de acesso direto aos deploys das aplicações desenvolvidas ao longo das aulas, organizados por tecnologia e atividade:
 
-| Atividade / Projeto      | Tecnologia              | Link de Acesso (Deploy)                                                      |
-
-| **Atividade Prática 01** | Vanilla JS / HTML / CSS | [Acessar Projeto (Vercel)](https://senai-projeto-vanilla-js-rho.vercel.app/) |
-| **Projeto React**        | React.js                | [Acessar Projeto (Vercel)](https://projeto-react-01-three.vercel.app/)       |
-| **Projeto Vue.js**       | Vue.js (Vite)           | [Acessar Projeto (Vercel)](https://meu-projeto-vue-pi.vercel.app/)           |
-| **Projeto Angular**      | Angular / TypeScript    | [Acessar Projeto (Vercel)](https://meu-app-angular-1.vercel.app/)            |
-| **Projeto Next.js**      | Next.js (Full-stack)    | [Acessar Projeto (Vercel)](https://projeto-next-sooty.vercel.app/)           |
+| Aula / Atividade | Projeto / Tecnologia | Link de Acesso (Deploy) |
+| :--- | :--- | :--- |
+| **Aula 01** | Atividade Prática 01 (Vanilla JS / HTML / CSS) | [Acessar Projeto (Vercel)](https://senai-projeto-vanilla-js-rho.vercel.app/) |
+| **Aula 02 / 03** | Projeto React.js | [Acessar Projeto (Vercel)](https://projeto-react-01-three.vercel.app/) |
+| **Aula 03** | Projeto Vue.js (Vite) | [Acessar Projeto (Vercel)](https://meu-projeto-vue-pi.vercel.app/) |
+| **Aula 03** | Projeto Angular | [Acessar Projeto (Vercel)](https://meu-app-angular-1.vercel.app/) |
+| **Aula 03** | Projeto Next.js (Full-stack) | [Acessar Projeto (Vercel)](https://projeto-next-sooty.vercel.app/) |
 
 ---
 
