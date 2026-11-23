@@ -22,6 +22,7 @@ Abaixo estão listados os links de acesso direto aos deploys das aplicações de
 | **Aula 05** | Gerenciador de notas (React + Express) | Deploy pendente · [Código e instruções locais](<Aula_05_Consumindo APIs no Front-end/Atividade_aula05/>) |
 | **Aula 06** | Projeto Integrador — Atende+ | [Escopo, backlog e Kanban locais](<Aula_06_Projetos_Front-end/Projeto_Integrador_AtendeMais/>) |
 | **Aula 07** | Atividade 01 — Box Model e Flexbox | Deploy pendente · [Código e instruções locais](<Aula_07_Frameworks_CSS/Atividade_01_Box_Model_Flexbox/>) |
+| **Aula 07** | Atividade 02 — Agenda com Tailwind CSS | Deploy pendente · [Código, evidências e instruções locais](<Aula_07_Frameworks_CSS/Atividade_02_Tailwind/>) |
 
 ---
 
@@ -150,9 +151,12 @@ Utilização do Postman para testes manuais, organização de coleções de requ
 
 ### Atividade 01 documentada
 - [Box Model e vinte demonstrações de Flexbox](<Aula_07_Frameworks_CSS/Atividade_01_Box_Model_Flexbox/>)
-- A Atividade 02 com Tailwind CSS permanece pendente; nenhum deploy externo foi feito.
+
+### Atividade 02 documentada
+- [Agenda Atende+ com Tailwind CSS, funcionalidades, evidências e catálogo de classes](<Aula_07_Frameworks_CSS/Atividade_02_Tailwind/>)
+- Os links do repositório e do deploy serão preenchidos no README da atividade após publicação manual.
 
 ---
 
 ## 🚀 Conclusão e Entrega das Atividades
-Todos os projetos práticos desenvolvidos ao longo da disciplina contam com separação entre Back-end (hospedado no Render) e Front-end (hospedado na Vercel), devidamente versionados e documentados neste repositório institucional do SENAI.
+Os links de repositórios e deploys pendentes serão adicionados aos READMEs das respectivas atividades após a publicação manual.
