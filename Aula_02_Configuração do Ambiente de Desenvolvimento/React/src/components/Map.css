@@ -1,0 +1,174 @@
+/* ==========================================
+   MAP.CSS — Engine Top-Down (Etapa 2.3)
+   ========================================== */
+
+/* image-rendering: pixelated — REGRA CRÍTICA */
+.camera-viewport {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #111;
+  position: relative;
+}
+
+.map-container {
+  position: absolute;
+  transition: transform 0.18s linear;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges; /* Firefox */
+  will-change: transform;
+}
+
+/* ── Tiles ── */
+.tile {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  box-sizing: border-box;
+}
+
+.tile-floor {
+  background-color: #8B9BB4;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.tile-wall {
+  background-color: #2F3E46;
+}
+
+.tile-door-closed {
+  background-color: #8B4513;
+  box-shadow: inset 0 0 4px rgba(0,0,0,0.6);
+}
+
+.tile-door-open {
+  background-color: #D2B48C;
+  opacity: 0.55;
+}
+
+/* ── Player e NPC — base comum ── */
+.player,
+.npc {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  transition: left 0.18s linear, top 0.18s linear;
+  z-index: 10;
+  overflow: visible; /* permite balões e badges acima do tile */
+}
+
+/* ── Player sprite — base (gerada por CharacterSprite via background-position) ── */
+.player-sprite {
+  /* dimensões herdadas do CharacterSprite via style inline */
+  image-rendering: pixelated;
+}
+
+/* Mantém compatibilidade com dir-* caso necessário */
+.player-sprite.dir-up    {}
+.player-sprite.dir-down  {}
+.player-sprite.dir-left  {}
+.player-sprite.dir-right {}
+
+/* ── NPC sprite — base ── */
+.npc-sprite {
+  /* dimensões herdadas do CharacterSprite via style inline */
+  image-rendering: pixelated;
+  transition: filter 0.2s, box-shadow 0.2s;
+}
+
+/* NPC próximo — destaque visual */
+.npc-sprite--nearby {
+  filter: drop-shadow(0 0 5px rgba(0, 229, 255, 0.9));
+  animation: npc-pulse 0.9s ease-in-out infinite;
+}
+
+/* NPC já concluído */
+.npc-sprite--completed {
+  filter: drop-shadow(0 0 4px rgba(76, 175, 80, 0.8));
+}
+
+@keyframes npc-pulse {
+  0%, 100% { filter: drop-shadow(0 0 4px rgba(0, 229, 255, 0.6)); }
+  50%       { filter: drop-shadow(0 0 10px rgba(0, 229, 255, 1)); }
+}
+
+/* ── Name tag abaixo do NPC ── */
+.npc-name-tag {
+  position: absolute;
+  bottom: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Courier New', monospace;
+  font-size: 8px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.65);
+  padding: 1px 4px;
+  border-radius: 3px;
+  white-space: nowrap;
+  pointer-events: none;
+  text-shadow: none;
+  letter-spacing: 0.5px;
+}
+
+/* ── Balão de interação "[E] Conversar" ── */
+.npc-bubble {
+  position: absolute;
+  bottom: 38px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(10, 10, 20, 0.92);
+  color: #00e5ff;
+  font-family: 'Courier New', monospace;
+  font-size: 9px;
+  font-weight: bold;
+  padding: 3px 7px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 229, 255, 0.6);
+  white-space: nowrap;
+  pointer-events: none;
+  z-index: 20;
+  animation: bubble-pop 0.2s cubic-bezier(0.16, 1, 0.3, 1), bubble-float 1.5s ease-in-out infinite 0.2s;
+  box-shadow: 0 0 8px rgba(0, 229, 255, 0.4);
+}
+
+/* Triângulo apontando para baixo */
+.npc-bubble::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid rgba(0, 229, 255, 0.6);
+}
+
+@keyframes bubble-pop {
+  from { transform: translateX(-50%) scale(0.6); opacity: 0; }
+  to   { transform: translateX(-50%) scale(1);   opacity: 1; }
+}
+
+@keyframes bubble-float {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50%       { transform: translateX(-50%) translateY(-3px); }
+}
+
+/* ── Badge de conclusão ── */
+.npc-completed-badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 18px;
+  height: 18px;
+  background: #4caf50;
+  border: 1.5px solid #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 9px;
+  color: #fff;
+  font-weight: bold;
+  z-index: 15;
+  pointer-events: none;
+}
