@@ -1,0 +1,177 @@
+{
+  "info": {
+    "_postman_id": "452b34bb-7e53-4a2d-b1ef-7f6b01298b10",
+    "name": "Aula 05 - API de Notas",
+    "description": "Validação sequencial das rotas CRUD da API local de notas.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:4321"
+    },
+    {
+      "key": "noteId",
+      "value": ""
+    }
+  ],
+  "item": [
+    {
+      "name": "Verificar API",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/health"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('API responde com status 200', function () {",
+              "  pm.response.to.have.status(200);",
+              "});"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Listar notas",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/api/notes"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('Lista de notas responde com status 200', function () {",
+              "  pm.response.to.have.status(200);",
+              "  pm.expect(pm.response.json()).to.be.an('array');",
+              "});"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Criar nota",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"titulo\": \"Nota de teste\",\n  \"texto\": \"Criada pela collection Postman.\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{baseUrl}}/api/notes"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('Nota criada com status 201', function () {",
+              "  pm.response.to.have.status(201);",
+              "  pm.expect(pm.response.json().id).to.be.a('string');",
+              "});",
+              "pm.collectionVariables.set('noteId', pm.response.json().id);"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Buscar nota por ID",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/api/notes/{{noteId}}"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('Nota encontrada com status 200', function () {",
+              "  pm.response.to.have.status(200);",
+              "  pm.expect(pm.response.json().id).to.eql(pm.collectionVariables.get('noteId'));",
+              "});"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Atualizar nota",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"titulo\": \"Nota atualizada\",\n  \"texto\": \"Atualizada pela collection Postman.\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{baseUrl}}/api/notes/{{noteId}}"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('Nota atualizada com status 200', function () {",
+              "  pm.response.to.have.status(200);",
+              "  pm.expect(pm.response.json().titulo).to.eql('Nota atualizada');",
+              "});"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Excluir nota",
+      "request": {
+        "method": "DELETE",
+        "url": "{{baseUrl}}/api/notes/{{noteId}}"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('Nota excluída com status 200', function () {",
+              "  pm.response.to.have.status(200);",
+              "  pm.expect(pm.response.json().mensagem).to.eql('Nota removida.');",
+              "});",
+              "pm.collectionVariables.unset('noteId');"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

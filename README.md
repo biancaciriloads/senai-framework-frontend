@@ -19,6 +19,7 @@ Abaixo estão listados os links de acesso direto aos deploys das aplicações de
 | **Aula 03** | Projeto Vue.js (Vite) | [Deploy anterior (template)](https://meu-projeto-vue-pi.vercel.app/) · [Código-fonte local](<Aula_03_Projetos com Frameworks Front-end/Projeto_02_Vue/>) |
 | **Aula 03** | Projeto Angular | [Deploy anterior (dashboard de clima)](https://meu-app-angular-1.vercel.app/) · [Código-fonte local](<Aula_03_Projetos com Frameworks Front-end/Projeto_03_Angular/>) |
 | **Aula 03** | Projeto 04 — Next.js | [Deploy anterior (template genérico)](https://projeto-next-sooty.vercel.app/) · [Código-fonte local](<Aula_03_Projetos com Frameworks Front-end/Projeto_04_Nextjs/>) |
+| **Aula 05** | Gerenciador de notas (React + Express) | Deploy pendente · [Código e instruções locais](<Aula_05_Consumindo APIs no Front-end/Atividade_aula05/>) |
 
 ---
 
@@ -80,8 +81,6 @@ Padrão **`MAJOR.MINOR.PATCH`**:
 - **Vue.js (Framework Progressivo):** Curva de suave aprendizado, reatividade eficiente e *Single-File Components* (`.vue`).
 - **Next.js (Framework Full-stack sobre React):** Focado em renderização no servidor (*SSR*), roteamento baseado em arquivos e otimizações de SEO.
 
----
-
 ## Aula 04 - Consumindo APIs no Front-end
 
 ### Atividades documentadas
@@ -117,6 +116,10 @@ app.listen(3000, () => console.log('Servidor rodando na porta 3000'));
 ---
 
 ## Aula 05 - Criando APIs para o Front-end
+
+### Atividade documentada
+- [Gerenciador de notas: API Express, frontend React, testes e collection Postman](<Aula_05_Consumindo APIs no Front-end/Atividade_aula05/>)
+- Os links dos repositórios e deploys serão preenchidos no README da atividade após publicação manual.
 
 ### 1. Implementando um CRUD Completo
 Evolução do projeto para um aplicativo de notas (*Notes App*) persistido em arquivos locais (`data.json`) utilizando as operações:

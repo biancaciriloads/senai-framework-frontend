@@ -31,22 +31,14 @@ O frontend abre em `http://localhost:5173` e consulta a API em `http://localhost
 
 Na pasta `Relogio_API`, execute `npm test`. Na pasta `Relogio_Frontend`, execute `npm run build` para validar os tipos TypeScript e gerar o bundle de produção.
 
-## Publicação prevista
+## Publicação manual — checklist pendente
 
-O código está preparado para Render e Vercel, mas a publicação precisa ocorrer nas contas do responsável pela entrega:
+Os repositórios remotos e deploys não foram criados. Quando fizer a publicação manual, insira os links e capturas nos campos abaixo:
 
-1. Publique o conteúdo de `Relogio_API` em um repositório GitHub e crie um Web Service no Render. O comando de início é `npm start`; configure `FRONTEND_ORIGINS` com a origem final do frontend.
-2. Publique o conteúdo de `Relogio_Frontend` em outro repositório GitHub e importe-o na Vercel como projeto Vite. Defina `VITE_CLOCK_API_URL` com a URL HTTPS do serviço Render.
-3. Após cada publicação, acesse a aplicação, confirme o indicador de conexão e a resposta de `GET /`; registre os links e capturas de tela no relatório de entrega.
+- [ ] Repositório GitHub da API: **inserir link após publicação**
+- [ ] Serviço da API no Render: **inserir URL após deploy**
+- [ ] Repositório GitHub do frontend: **inserir link após publicação**
+- [ ] Aplicação do frontend na Vercel: **inserir URL após deploy**
+- [ ] Capturas dos painéis do Render e da Vercel: **adicionar após deploy**
 
-Não foram criados repositórios remotos nem realizados deploys. A criação desses recursos requer acesso autenticado às contas GitHub, Render e Vercel; nenhum URL remoto ou captura de painel é inventado neste documento.
-
-## Evidências
-
-| Evidência exigida | Situação |
-| :--- | :--- |
-| Código da API e do frontend | Disponível em [`Relogio_API/app.js`](./Relogio_API/app.js), [`Relogio_API/tests/app.test.js`](./Relogio_API/tests/app.test.js) e [`Relogio_Frontend/src/App.tsx`](./Relogio_Frontend/src/App.tsx). |
-| Aplicação funcionando localmente | [Captura da aplicação ligada à API local](./Relogio_Frontend/evidencias/relogio-local.png). Testes da API e build do frontend também foram executados. |
-| Painel Render e endpoint publicado | Pendente de deploy na conta do responsável. |
-| Painel Vercel e aplicação publicada | Pendente de deploy na conta do responsável. |
-| Links de dois repositórios GitHub | Pendentes de publicação dos projetos em repositórios separados. |
+A [captura local da aplicação](./Relogio_Frontend/evidencias/relogio-local.png) já foi registrada. Não foram inventados URLs remotos ou capturas dos painéis.
