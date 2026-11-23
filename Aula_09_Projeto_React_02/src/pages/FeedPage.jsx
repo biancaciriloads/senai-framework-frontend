@@ -6,6 +6,7 @@ import { getPosts } from '../api/posts.js';
 export default function FeedPage() {
   const [posts, setPosts] = useState([]);
   const [query, setQuery] = useState('');
+  const [retryCount, setRetryCount] = useState(0);
   const [status, setStatus] = useState({ kind: 'loading', message: 'Buscando ideias da comunidade…' });
 
   useEffect(() => {
@@ -25,7 +26,7 @@ export default function FeedPage() {
 
     loadPosts();
     return () => controller.abort();
-  }, []);
+  }, [retryCount]);
 
   const visiblePosts = useMemo(() => {
     const normalizedQuery = query.trim().toLocaleLowerCase('pt-BR');
@@ -89,7 +90,9 @@ export default function FeedPage() {
         {status.kind === 'error' && (
           <div className="state-panel state-panel-error" role="alert">
             <p>{status.message}</p>
-            <button type="button" onClick={() => window.location.reload()}>Tentar novamente</button>
+            <button type="button" onClick={() => setRetryCount((count) => count + 1)}>
+              Tentar novamente
+            </button>
           </div>
         )}
         {status.kind === 'success' && (

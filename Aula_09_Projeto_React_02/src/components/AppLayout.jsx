@@ -14,9 +14,9 @@ export default function AppLayout() {
             API <span aria-hidden="true">↗</span>
           </a>
         </nav>
-        <a className="header-action" href="#nova-publicacao">
+        <Link className="header-action" to="/#nova-publicacao">
           <span aria-hidden="true">＋</span> Compartilhar ideia
-        </a>
+        </Link>
       </header>
       <main>
         <Outlet />
