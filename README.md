@@ -1,36 +1,53 @@
-# Repositório Oficial - Disciplina: Frameworks Front-end
+# Portfólio da Disciplina: Frameworks Front-end
 **Instituição:** SENAI  
 **Professor:** Me. Deivison S. Takatu  
 **Curso:** Análise e Desenvolvimento de Sistemas (ADS)  
 
 ---
 
-## 📚 Visão Geral do Repositório
-Este documento (`README.md`) consolida os resumos, conceitos práticos e diretrizes de todas as aulas ministradas ao longo do semestre na disciplina de **Frameworks Front-end**. O repositório foi estruturado em grupo para centralizar o histórico de atividades, códigos-fonte de projetos e documentações técnicas.
-
+## 📚 Visão geral
+Este portfólio reúne os materiais de aula, atividades práticas, projetos e documentação local desenvolvidos para a disciplina de **Frameworks Front-end**. As entregas estão organizadas por aula e incluem instruções para execução sempre que aplicável.
 ---
-## 🔗 Portfólio de Projetos e Atividades Publicadas
-Abaixo estão listados os links de acesso direto aos deploys das aplicações desenvolvidas ao longo das aulas, organizados por tecnologia e atividade:
 
-| Aula / Atividade | Projeto / Tecnologia | Link de Acesso (Deploy) |
-| :--- | :--- | :--- |
-| **Aula 01** | Atividade Prática 01 (Vanilla JS / HTML / CSS) | [Acessar Projeto (Vercel)](https://senai-projeto-vanilla-js-rho.vercel.app/) |
-| **Aula 02 / 03** | Projeto React.js | [Acessar Projeto (Vercel)](https://projeto-react-01-three.vercel.app/) · [Código-fonte local](<Aula_02_Configuração do Ambiente de Desenvolvimento/React/>) |
-| **Aula 03** | Projeto Vue.js (Vite) | [Deploy anterior (template)](https://meu-projeto-vue-pi.vercel.app/) · [Código-fonte local](<Aula_03_Projetos com Frameworks Front-end/Projeto_02_Vue/>) |
-| **Aula 03** | Projeto Angular | [Deploy anterior (dashboard de clima)](https://meu-app-angular-1.vercel.app/) · [Código-fonte local](<Aula_03_Projetos com Frameworks Front-end/Projeto_03_Angular/>) |
-| **Aula 03** | Projeto 04 — Next.js | [Deploy anterior (template genérico)](https://projeto-next-sooty.vercel.app/) · [Código-fonte local](<Aula_03_Projetos com Frameworks Front-end/Projeto_04_Nextjs/>) |
-| **Aula 05** | Gerenciador de notas (React + Express) | Deploy pendente · [Código e instruções locais](<Aula_05_Consumindo APIs no Front-end/Atividade_aula05/>) |
-| **Aula 06** | Projeto Integrador — Atende+ | [Escopo, backlog e Kanban locais](<Aula_06_Projetos_Front-end/Projeto_Integrador_AtendeMais/>) |
-| **Aula 07** | Atividade 01 — Box Model e Flexbox | Deploy pendente · [Código e instruções locais](<Aula_07_Frameworks_CSS/Atividade_01_Box_Model_Flexbox/>) |
-| **Aula 07** | Atividade 02 — Agenda com Tailwind CSS | Deploy pendente · [Código, evidências e instruções locais](<Aula_07_Frameworks_CSS/Atividade_02_Tailwind/>) |
-| **Aula 08** | Projeto React — PixelPlay | Deploy pendente · [Código e instruções locais](<Aula_08_Projeto_React/>) |
-| **Aula 09** | Projeto React 02 — Mural Descobertas | Deploy pendente · [Código e instruções locais](<Aula_09_Projeto_React_02/>) |
+## 🗂️ Índice completo de entregas
+Os links desta tabela apontam para as cópias e documentos locais deste repositório. Deploys ou repositórios remotos não foram criados para as entregas marcadas como pendentes. URLs antigas são identificadas quando não representam a versão atual.
+
+| Aula | Atividade / projeto | Código e documentação local | Publicação |
+| :--- | :--- | :--- | :--- |
+| **Aula 01** | Atividade 01 — Jogo de Adivinhação (Vanilla JS) | [Aplicação e README](<Aula_01_Apresentação da Disciplina e Contextualização/Atividade_01_VanillaJS/>) | [Publicado anteriormente](https://senai-projeto-vanilla-js-rho.vercel.app/) |
+| **Aula 01** | Atividade 02 — Relatório técnico sobre React | [PDF, fonte HTML e README](<Aula_01_Apresentação da Disciplina e Contextualização/Atividade_02_Relatorio_React/>) | Não se aplica |
+| **Aula 02** | Projeto React com Phaser | [Projeto e instruções](<Aula_02_Configuração do Ambiente de Desenvolvimento/React/>) | [Publicado anteriormente](https://projeto-react-01-three.vercel.app/) |
+| **Aula 02** | Atividade 01 — Projeto React | [Cópia local e README](<Aula_02_Configuração do Ambiente de Desenvolvimento/Atividade_01_Projeto_React/>) | Somente local |
+| **Aula 03** | Projeto 02 — Atendimento hospitalar com Vue | [Código e README](<Aula_03_Projetos com Frameworks Front-end/Projeto_02_Vue/>) | Versão atual pendente; deploy anterior de template não corresponde |
+| **Aula 03** | Projeto 03 — Atendimento hospitalar com Angular | [Código e README](<Aula_03_Projetos com Frameworks Front-end/Projeto_03_Angular/>) | Versão atual pendente; deploy anterior de dashboard de clima não corresponde |
+| **Aula 03** | Projeto 04 — Atendimento hospitalar com Next.js | [Código e README](<Aula_03_Projetos com Frameworks Front-end/Projeto_04_Nextjs/>) | Versão atual pendente; deploy anterior de template não corresponde |
+| **Aula 04** | Atividade 01 — Pesquisa de aplicações que consomem APIs | [Pesquisa em Markdown](<Aula_04_Consumindo APIs no Front-end/Atividade_01.md>) | Não se aplica |
+| **Aula 04** | Atividade 02 — Relógio com API e frontend React | [API, frontend, testes, evidências e instruções](<Aula_04_Consumindo APIs no Front-end/Atividade_02/>) | Pendente; checklist nos READMEs da atividade |
+| **Aula 05** | Gerenciador de Notas — API Express e frontend React | [Código, testes e instruções](<Aula_05_Consumindo APIs no Front-end/Atividade_aula05/>) | Pendente; checklist no README da atividade |
+| **Aula 06** | Projeto Integrador — Atende+ | [Escopo, backlog, histórias, Kanban e README](<Aula_06_Projetos_Front-end/Projeto_Integrador_AtendeMais/>) | Não se aplica; planejamento local |
+| **Aula 07** | Atividade 01 — Box Model e Flexbox | [Demonstrações e README](<Aula_07_Frameworks_CSS/Atividade_01_Box_Model_Flexbox/>) | Pendente; checklist no README da atividade |
+| **Aula 07** | Atividade 02 — Agenda com Tailwind CSS | [Aplicação, evidências e README](<Aula_07_Frameworks_CSS/Atividade_02_Tailwind/>) | Pendente; checklist no README da atividade |
+| **Aula 08** | Projeto React — PixelPlay | [Código e README](<Aula_08_Projeto_React/>) | Pendente; checklist no README da atividade |
+| **Aula 09** | Projeto React 02 — Mural Descobertas | [Código e README](<Aula_09_Projeto_React_02/>) | Pendente; checklist no README da atividade |
+
+### Materiais de aula e plano de ensino
+
+| Aula | Material local |
+| :--- | :--- |
+| **Aula 01** | [Resumo](<Aula_01_Apresentação da Disciplina e Contextualização/Resumo_Aula_01.md>) · [Apresentação em PDF](<Aula_01_Apresentação da Disciplina e Contextualização/Aula 01 - Apresentação da Disciplina e Contextualização.pdf>) · [Material complementar sobre Tailwind](<Aula_01_Apresentação da Disciplina e Contextualização/Tailwind.pdf>) |
+| **Aula 02** | [Resumo](<Aula_02_Configuração do Ambiente de Desenvolvimento/Resumo_Aula02.md>) · [Apresentação em PDF](<Aula_02_Configuração do Ambiente de Desenvolvimento/Aula 02 - Configuração do Ambiente de Desenvolvimento.pdf>) |
+| **Aula 03** | [Resumo da aula](<Aula_03_Projetos com Frameworks Front-end/Resumo_Aula_03>) · [Apresentação em PDF](<Aula_03_Projetos com Frameworks Front-end/Aula 03 - Projetos com Frameworks Front-end.pdf>) |
+| **Aula 04** | [Resumo](<Aula_04_Consumindo APIs no Front-end/Resumo_Aula_04.md>) · [Apresentação em PDF](<Aula_04_Consumindo APIs no Front-end/Aula 04 - Consumindo APIs no Front-end.pdf>) |
+| **Aula 05** | [Resumo](<Aula_05_Consumindo APIs no Front-end/Resumo_Aula_05.md>) · [Apresentação em PDF](<Aula_05_Consumindo APIs no Front-end/Aula 05 - Criando APIs para o Front-end.pdf>) |
+| **Disciplina** | [Plano de Ensino em PDF](<Plano de Ensino/Plano de Ensino - Frameworks Front-end.pdf>) |
+
+**Escopo atual:** o material oficial disponível neste workspace vai até a Aula 09; todas as aulas e entregas locais listadas acima estão indexadas. Links de publicação que faltam poderão ser preenchidos nos READMEs das respectivas atividades após o deploy manual.
 
 ---
 
 ## 📋 Sumário Geral das Aulas
 - [Aula 01: Apresentação da Disciplina e Contextualização](#aula-01---apresentação-da-disciplina-e-contextualização)
-- [Aula 02: Configuração do Ambiente de Desenvolvimento](#aula-02---configuração-do-ambiente-de-dessenvolvimento)
+- [Aula 02: Configuração do Ambiente de Desenvolvimento](#aula-02---configuração-do-ambiente-de-desenvolvimento)
 - [Aula 03: Projetos com Frameworks Front-end](#aula-03---projetos-com-frameworks-front-end)
 - [Aula 04: Consumindo APIs no Front-end](#aula-04---consumindo-apis-no-front-end)
 - [Aula 05: Criando APIs para o Front-end](#aula-05---criando-apis-para-o-front-end)
