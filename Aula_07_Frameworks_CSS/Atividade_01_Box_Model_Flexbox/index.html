@@ -81,8 +81,107 @@
           </div>
           <p>Compare a regra aplicada e o resultado. Redimensione a janela para observar as adaptações.</p>
         </div>
-        <div class="demo-grid" aria-live="polite">
-          <!-- Os 20 exemplos de Flexbox serão adicionados aqui. -->
+        <div class="demo-grid">
+          <article class="demo-card">
+            <header class="demo-heading"><span class="demo-number">01</span><div><h3>Container flexível</h3><code>display: flex</code></div></header>
+            <div class="flex-sample flex-01" aria-label="Três itens alinhados em uma linha flexível"><span>01</span><span>02</span><span>03</span></div>
+            <p>A propriedade display cria o contexto flexível para os filhos diretos.</p>
+          </article>
+          <article class="demo-card">
+            <header class="demo-heading"><span class="demo-number">02</span><div><h3>Direção em linha</h3><code>flex-direction: row</code></div></header>
+            <div class="flex-sample flex-02" aria-label="Itens na ordem normal, da esquerda para a direita"><span>01</span><span>02</span><span>03</span></div>
+            <p>O eixo principal é horizontal e segue a ordem do documento.</p>
+          </article>
+          <article class="demo-card">
+            <header class="demo-heading"><span class="demo-number">03</span><div><h3>Linha invertida</h3><code>flex-direction: row-reverse</code></div></header>
+            <div class="flex-sample flex-03" aria-label="Itens em uma linha da direita para a esquerda"><span>01</span><span>02</span><span>03</span></div>
+            <p>Inverte a direção visual sem mudar a ordem no HTML.</p>
+          </article>
+          <article class="demo-card">
+            <header class="demo-heading"><span class="demo-number">04</span><div><h3>Direção em coluna</h3><code>flex-direction: column</code></div></header>
+            <div class="flex-sample flex-04" aria-label="Itens empilhados de cima para baixo"><span>01</span><span>02</span><span>03</span></div>
+            <p>O eixo principal passa a ser vertical.</p>
+          </article>
+          <article class="demo-card">
+            <header class="demo-heading"><span class="demo-number">05</span><div><h3>Coluna invertida</h3><code>flex-direction: column-reverse</code></div></header>
+            <div class="flex-sample flex-05" aria-label="Itens empilhados de baixo para cima"><span>01</span><span>02</span><span>03</span></div>
+            <p>Empilha no eixo vertical começando pelo lado oposto.</p>
+          </article>
+          <article class="demo-card">
+            <header class="demo-heading"><span class="demo-number">06</span><div><h3>Sem quebra de linha</h3><code>flex-wrap: nowrap</code></div></header>
+            <div class="flex-sample flex-06" aria-label="Itens sem quebra, com redução permitida"><span>01</span><span>02</span><span>03</span><span>04</span><span>05</span><span>06</span></div>
+            <p>Os itens permanecem em uma linha e podem encolher para caber.</p>
+          </article>
+          <article class="demo-card">
+            <header class="demo-heading"><span class="demo-number">07</span><div><h3>Quebra de linha</h3><code>flex-wrap: wrap</code></div></header>
+            <div class="flex-sample flex-07" aria-label="Itens quebrados em linhas conforme o espaço"><span>01</span><span>02</span><span>03</span><span>04</span><span>05</span><span>06</span></div>
+            <p>Os itens vão para outra linha quando falta espaço no container.</p>
+          </article>
+          <article class="demo-card">
+            <header class="demo-heading"><span class="demo-number">08</span><div><h3>Quebra invertida</h3><code>flex-wrap: wrap-reverse</code></div></header>
+            <div class="flex-sample flex-08" aria-label="Linhas de itens com a direção transversal invertida"><span>01</span><span>02</span><span>03</span><span>04</span><span>05</span><span>06</span></div>
+            <p>Permite múltiplas linhas e inverte a direção do eixo transversal.</p>
+          </article>
+          <article class="demo-card">
+            <header class="demo-heading"><span class="demo-number">09</span><div><h3>Fluxo abreviado</h3><code>flex-flow: row wrap</code></div></header>
+            <div class="flex-sample flex-09" aria-label="Itens em fluxo abreviado de linha e múltiplas linhas"><span>01</span><span>02</span><span>03</span><span>04</span><span>05</span><span>06</span></div>
+            <p>Combina direção e quebra de linha em uma só declaração.</p>
+          </article>
+          <article class="demo-card">
+            <header class="demo-heading"><span class="demo-number">10</span><div><h3>Início do eixo</h3><code>justify-content: flex-start</code></div></header>
+            <div class="flex-sample flex-10" aria-label="Itens no início do eixo principal"><span>01</span><span>02</span><span>03</span></div>
+            <p>Reúne os itens no início do eixo principal.</p>
+          </article>
+          <article class="demo-card">
+            <header class="demo-heading"><span class="demo-number">11</span><div><h3>Final do eixo</h3><code>justify-content: flex-end</code></div></header>
+            <div class="flex-sample flex-11" aria-label="Itens no final do eixo principal"><span>01</span><span>02</span><span>03</span></div>
+            <p>Alinha os itens no final do eixo principal.</p>
+          </article>
+          <article class="demo-card">
+            <header class="demo-heading"><span class="demo-number">12</span><div><h3>Centro do eixo</h3><code>justify-content: center</code></div></header>
+            <div class="flex-sample flex-12" aria-label="Itens centralizados no eixo principal"><span>01</span><span>02</span><span>03</span></div>
+            <p>Centraliza o grupo de itens no eixo principal.</p>
+          </article>
+          <article class="demo-card">
+            <header class="demo-heading"><span class="demo-number">13</span><div><h3>Espaço entre itens</h3><code>justify-content: space-between</code></div></header>
+            <div class="flex-sample flex-13" aria-label="Espaço distribuído entre itens"><span>01</span><span>02</span><span>03</span></div>
+            <p>Distribui o espaço livre entre os itens, sem espaço nas extremidades.</p>
+          </article>
+          <article class="demo-card">
+            <header class="demo-heading"><span class="demo-number">14</span><div><h3>Espaço ao redor</h3><code>justify-content: space-around</code></div></header>
+            <div class="flex-sample flex-14" aria-label="Espaço ao redor dos itens"><span>01</span><span>02</span><span>03</span></div>
+            <p>Reserva espaço em torno de cada item; nas bordas, a metade.</p>
+          </article>
+          <article class="demo-card">
+            <header class="demo-heading"><span class="demo-number">15</span><div><h3>Espaço uniforme</h3><code>justify-content: space-evenly</code></div></header>
+            <div class="flex-sample flex-15" aria-label="Espaços iguais entre itens e extremidades"><span>01</span><span>02</span><span>03</span></div>
+            <p>Distribui espaços iguais entre itens e também nas extremidades.</p>
+          </article>
+          <article class="demo-card">
+            <header class="demo-heading"><span class="demo-number">16</span><div><h3>Alinhar no início</h3><code>align-items: flex-start</code></div></header>
+            <div class="flex-sample flex-16" aria-label="Itens alinhados no início do eixo transversal"><span>01</span><span>02</span><span>03</span></div>
+            <p>Alinha os itens no início do eixo transversal.</p>
+          </article>
+          <article class="demo-card">
+            <header class="demo-heading"><span class="demo-number">17</span><div><h3>Alinhamento individual</h3><code>align-self: center</code></div></header>
+            <div class="flex-sample flex-17" aria-label="Segundo item alinhado individualmente ao centro"><span>01</span><span>02</span><span>03</span></div>
+            <p>O segundo item se alinha individualmente, sem alterar os irmãos.</p>
+          </article>
+          <article class="demo-card">
+            <header class="demo-heading"><span class="demo-number">18</span><div><h3>Crescimento flexível</h3><code>flex-grow: 1</code></div></header>
+            <div class="flex-sample flex-18" aria-label="Segundo item cresce para ocupar o espaço livre"><span>01</span><span>02</span><span>03</span></div>
+            <p>O segundo item cresce e absorve parte do espaço livre.</p>
+          </article>
+          <article class="demo-card">
+            <header class="demo-heading"><span class="demo-number">19</span><div><h3>Ordem visual</h3><code>order: -1</code></div></header>
+            <div class="flex-sample flex-19" aria-label="Terceiro item aparece primeiro por causa da ordem visual"><span>01</span><span>02</span><span>03</span></div>
+            <p>Altera a ordem visual do item sem modificar o HTML.</p>
+          </article>
+          <article class="demo-card">
+            <header class="demo-heading"><span class="demo-number">20</span><div><h3>Proporção flexível</h3><code>flex: 2 1 4rem</code></div></header>
+            <div class="flex-sample flex-20" aria-label="Itens com bases e proporções flexíveis diferentes"><span>01</span><span>02</span><span>03</span></div>
+            <p>Define crescimento, redução e base inicial do item.</p>
+          </article>
         </div>
       </section>
     </main>
