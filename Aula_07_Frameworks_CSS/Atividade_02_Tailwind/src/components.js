@@ -37,7 +37,7 @@ function formatDate(value) {
 
 export function statCard({ id, label, description, iconName, iconClasses }) {
   return `
-    <article class="rounded-2xl border border-line bg-white p-5 shadow-sm">
+    <article class="rounded-2xl border border-line bg-white p-5 shadow-panel">
       <div class="flex items-center justify-between"><span class="text-sm font-medium text-muted">${label}</span><span class="grid size-10 place-items-center rounded-xl ${iconClasses}">${icon(iconName)}</span></div>
       <p id="${id}" class="mt-5 text-3xl font-bold tracking-tight text-ink">0</p>
       <p class="mt-1 text-xs text-muted">${description}</p>

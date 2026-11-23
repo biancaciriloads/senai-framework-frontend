@@ -121,7 +121,7 @@ app.innerHTML = `
             <h1 class="text-3xl font-bold tracking-tight text-ink sm:text-4xl">Bom dia! <span aria-hidden="true">☀</span></h1>
             <p class="mt-2 text-sm text-muted">Acompanhe a agenda e organize os atendimentos de hoje.</p>
           </div>
-          <button type="button" data-action="focus-form" class="inline-flex h-11 items-center justify-center gap-2 rounded-xl bg-brand px-5 text-sm font-semibold text-white shadow-sm transition hover:bg-brand-dark focus:outline-none focus:ring-4 focus:ring-brand/20">
+          <button type="button" data-action="focus-form" class="inline-flex h-11 items-center justify-center gap-2 rounded-xl bg-brand px-5 text-sm font-semibold text-white shadow-panel transition hover:bg-brand-dark focus:outline-none focus:ring-4 focus:ring-brand/20">
             ${icon('plus', 'size-4')}Nova consulta
           </button>
         </section>
@@ -134,7 +134,7 @@ app.innerHTML = `
         </section>
 
         <section class="grid items-start gap-6 xl:grid-cols-[minmax(0,1.55fr)_minmax(290px,0.8fr)]">
-          <div id="agenda" class="min-w-0 rounded-2xl border border-line bg-white shadow-sm">
+          <div id="agenda" class="min-w-0 rounded-2xl border border-line bg-white shadow-panel">
             <div class="flex flex-col gap-4 border-b border-line p-5 sm:flex-row sm:items-center sm:justify-between sm:px-6">
               <div><h2 class="text-lg font-bold text-ink">Agenda de consultas</h2><p class="mt-1 text-xs text-muted">Consulte e atualize o status dos atendimentos.</p></div>
               <button type="button" data-action="clear-search" class="self-start rounded-lg p-2 text-muted transition hover:bg-page hover:text-ink sm:self-auto" aria-label="Limpar filtros">${icon('close')}</button>
@@ -162,7 +162,7 @@ app.innerHTML = `
             </div>
           </div>
 
-          <section id="new-appointment" class="rounded-2xl border border-line bg-white p-5 shadow-sm sm:p-6">
+          <section id="new-appointment" class="rounded-2xl border border-line bg-white p-5 shadow-panel sm:p-6">
             <div class="mb-5 flex items-start justify-between gap-3">
               <div><p class="text-xs font-semibold uppercase tracking-widest text-brand">NOVO HORÁRIO</p><h2 class="mt-1 text-lg font-bold text-ink">Agendar consulta</h2></div>
               <span class="grid size-10 place-items-center rounded-xl bg-brand-soft text-brand">${icon('plus')}</span>
@@ -183,7 +183,7 @@ app.innerHTML = `
                 <div><label for="time" class="mb-1.5 block text-xs font-semibold text-ink">Horário</label><input id="time" name="time" type="time" required class="h-11 w-full min-w-0 rounded-xl border border-line bg-white px-2 text-sm text-ink outline-none focus:border-brand focus:ring-4 focus:ring-brand/10" /></div>
               </div>
               <p class="rounded-xl bg-page p-3 text-xs leading-5 text-muted">Use apenas dados fictícios. Este protótipo não é conectado a um serviço de saúde.</p>
-              <button type="submit" class="inline-flex h-11 w-full items-center justify-center gap-2 rounded-xl bg-brand px-4 text-sm font-semibold text-white shadow-sm transition hover:bg-brand-dark focus:outline-none focus:ring-4 focus:ring-brand/20">
+              <button type="submit" class="inline-flex h-11 w-full items-center justify-center gap-2 rounded-xl bg-brand px-4 text-sm font-semibold text-white shadow-panel transition hover:bg-brand-dark focus:outline-none focus:ring-4 focus:ring-brand/20">
                 ${icon('check', 'size-4')}Adicionar à agenda
               </button>
             </form>
@@ -281,7 +281,7 @@ document.addEventListener('click', (event) => {
   if (!button) return;
 
   if (button.dataset.action === 'focus-form') {
-    document.querySelector('#new-appointment').scrollIntoView({ behavior: 'smooth', block: 'center' });
+    document.querySelector('#new-appointment').scrollIntoView({ block: 'center' });
     document.querySelector('#patient').focus({ preventScroll: true });
     return;
   }

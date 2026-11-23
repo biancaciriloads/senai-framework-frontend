@@ -10,16 +10,37 @@
   --color-brand-soft: #e9f3ec;
   --color-amber-soft: #fbf2df;
   --font-sans: "Inter", "Segoe UI", Arial, sans-serif;
+  --shadow-panel: 0 8px 26px rgb(34 53 45 / 5%);
 }
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     margin: 0;
+    background-image: radial-gradient(ellipse at 86% 8%, rgb(52 123 89 / 4%), transparent 29rem);
+    background-repeat: no-repeat;
   }
 
   button,
   input,
   select {
     font: inherit;
+  }
+
+  ::selection {
+    color: var(--color-ink);
+    background: var(--color-brand-soft);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
   }
 }
