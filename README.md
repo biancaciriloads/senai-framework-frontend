@@ -24,6 +24,7 @@ Abaixo estão listados os links de acesso direto aos deploys das aplicações de
 | **Aula 07** | Atividade 01 — Box Model e Flexbox | Deploy pendente · [Código e instruções locais](<Aula_07_Frameworks_CSS/Atividade_01_Box_Model_Flexbox/>) |
 | **Aula 07** | Atividade 02 — Agenda com Tailwind CSS | Deploy pendente · [Código, evidências e instruções locais](<Aula_07_Frameworks_CSS/Atividade_02_Tailwind/>) |
 | **Aula 08** | Projeto React — PixelPlay | Deploy pendente · [Código e instruções locais](<Aula_08_Projeto_React/>) |
+| **Aula 09** | Projeto React 02 — Mural Descobertas | Deploy pendente · [Código e instruções locais](<Aula_09_Projeto_React_02/>) |
 
 ---
 
@@ -36,6 +37,7 @@ Abaixo estão listados os links de acesso direto aos deploys das aplicações de
 - [Aula 06: Projetos Front-end](#aula-06---projetos-front-end)
 - [Aula 07: Frameworks CSS](#aula-07---frameworks-css)
 - [Aula 08: Projeto React](#aula-08---projeto-react)
+- [Aula 09: Projeto React 02](#aula-09---projeto-react-02)
 
 ---
 
@@ -164,6 +166,14 @@ Utilização do Postman para testes manuais, organização de coleções de requ
 
 ### Atividade documentada
 - [PixelPlay: biblioteca interativa que demonstra JSX, componentes, props, listas com keys e renderização condicional](<Aula_08_Projeto_React/>)
+- Os links do repositório e da aplicação serão preenchidos no README da atividade após publicação manual.
+
+---
+
+## Aula 09 - Projeto React 02
+
+### Atividade documentada
+- [Descobertas: mural React com estado, formulário, useEffect, consumo de API e React Router](<Aula_09_Projeto_React_02/>)
 - Os links do repositório e da aplicação serão preenchidos no README da atividade após publicação manual.
 
 ---
