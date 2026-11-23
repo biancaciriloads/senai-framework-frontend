@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Demonstrações visuais de Box Model e Flexbox usando CSS externo."
+    />
+    <meta name="theme-color" content="#f6f7f2" />
+    <title>CSS em prática — Box Model &amp; Flexbox</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="CSS em prática, início">
+        <span class="brand-mark" aria-hidden="true">&lt;/&gt;</span>
+        <span>css<span class="brand-accent">.</span>em prática</span>
+      </a>
+      <nav class="site-nav" aria-label="Navegação principal">
+        <a href="#box-model">Box Model</a>
+        <a href="#flexbox">Flexbox</a>
+      </nav>
+    </header>
+
+    <main id="inicio">
+      <section class="hero" aria-labelledby="page-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> AULA 07 · ATIVIDADE 01</p>
+          <h1 id="page-title">Caixas bem pensadas.<br /><span>Layouts que fluem.</span></h1>
+          <p class="hero-description">
+            Explore o Box Model e veja como uma propriedade do Flexbox muda a organização
+            dos elementos na prática.
+          </p>
+          <a class="hero-link" href="#flexbox">
+            Explorar demonstrações <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+        <aside class="hero-note" aria-label="Resumo da atividade">
+          <span class="note-icon" aria-hidden="true">✳</span>
+          <p>Uma página.<br /><strong>20 demonstrações.</strong><br />CSS externo e responsivo.</p>
+        </aside>
+      </section>
+
+      <section id="box-model" class="content-section box-section" aria-labelledby="box-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">01 — TAMANHO E ESPAÇO</p>
+            <h2 id="box-title">Tudo começa com uma caixa.</h2>
+          </div>
+          <p>O Box Model define como conteúdo, preenchimento, borda e margem constroem cada elemento.</p>
+        </div>
+
+        <div class="box-model-layout">
+          <div class="box-model-visual" role="img" aria-label="Diagrama em camadas do Box Model: margem, borda, padding e conteúdo">
+            <div class="box-layer box-margin">
+              <span class="layer-label">margin</span>
+              <div class="box-layer box-border">
+                <span class="layer-label">border</span>
+                <div class="box-layer box-padding">
+                  <span class="layer-label">padding</span>
+                  <div class="box-content">content</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ul class="box-model-legend" aria-label="Partes do Box Model">
+            <li><span class="legend-swatch swatch-content"></span><span><strong>Content</strong><small>Texto, imagem ou componente.</small></span></li>
+            <li><span class="legend-swatch swatch-padding"></span><span><strong>Padding</strong><small>Espaço entre conteúdo e borda.</small></span></li>
+            <li><span class="legend-swatch swatch-border"></span><span><strong>Border</strong><small>Contorno que envolve a caixa.</small></span></li>
+            <li><span class="legend-swatch swatch-margin"></span><span><strong>Margin</strong><small>Espaço externo entre elementos.</small></span></li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="flexbox" class="content-section flex-section" aria-labelledby="flex-title">
+        <div class="section-heading flex-heading">
+          <div>
+            <p class="eyebrow">02 — DISTRIBUIÇÃO E ALINHAMENTO</p>
+            <h2 id="flex-title">Flexbox em 20 exemplos.</h2>
+          </div>
+          <p>Compare a regra aplicada e o resultado. Redimensione a janela para observar as adaptações.</p>
+        </div>
+        <div class="demo-grid" aria-live="polite">
+          <!-- Os 20 exemplos de Flexbox serão adicionados aqui. -->
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Aula 07 · Frameworks CSS</span>
+      <a href="#inicio">Voltar ao início ↑</a>
+    </footer>
+  </body>
+</html>
