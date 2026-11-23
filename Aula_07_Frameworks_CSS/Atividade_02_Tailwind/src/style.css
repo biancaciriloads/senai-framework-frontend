@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  --color-page: #f5f7f5;
+  --color-ink: #22352d;
+  --color-muted: #74847b;
+  --color-line: #e2e9e3;
+  --color-brand: #347b59;
+  --color-brand-dark: #256243;
+  --color-brand-soft: #e9f3ec;
+  --color-amber-soft: #fbf2df;
+  --font-sans: "Inter", "Segoe UI", Arial, sans-serif;
+}
+
+@layer base {
+  body {
+    margin: 0;
+  }
+
+  button,
+  input,
+  select {
+    font: inherit;
+  }
+}
