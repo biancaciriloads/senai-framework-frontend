@@ -86,6 +86,7 @@ Padrão **`MAJOR.MINOR.PATCH`**:
 
 ### Atividades documentadas
 - [Atividade 01: pesquisa de projetos que consomem APIs](<Aula_04_Consumindo APIs no Front-end/Atividade_01.md>)
+- [Atividade 02: API de data e hora com frontend React](<Aula_04_Consumindo APIs no Front-end/Atividade_02/>)
 
 ### 1. Conceitos de API e Protocolo HTTP
 - **REST:** Estilo arquitetural cliente-servidor *stateless* baseado em URIs e transferência de dados via JSON.
