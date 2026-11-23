@@ -20,6 +20,7 @@ Abaixo estão listados os links de acesso direto aos deploys das aplicações de
 | **Aula 03** | Projeto Angular | [Deploy anterior (dashboard de clima)](https://meu-app-angular-1.vercel.app/) · [Código-fonte local](<Aula_03_Projetos com Frameworks Front-end/Projeto_03_Angular/>) |
 | **Aula 03** | Projeto 04 — Next.js | [Deploy anterior (template genérico)](https://projeto-next-sooty.vercel.app/) · [Código-fonte local](<Aula_03_Projetos com Frameworks Front-end/Projeto_04_Nextjs/>) |
 | **Aula 05** | Gerenciador de notas (React + Express) | Deploy pendente · [Código e instruções locais](<Aula_05_Consumindo APIs no Front-end/Atividade_aula05/>) |
+| **Aula 06** | Projeto Integrador — Atende+ | [Escopo, backlog e Kanban locais](<Aula_06_Projetos_Front-end/Projeto_Integrador_AtendeMais/>) |
 
 ---
 
@@ -29,6 +30,7 @@ Abaixo estão listados os links de acesso direto aos deploys das aplicações de
 - [Aula 03: Projetos com Frameworks Front-end](#aula-03---projetos-com-frameworks-front-end)
 - [Aula 04: Consumindo APIs no Front-end](#aula-04---consumindo-apis-no-front-end)
 - [Aula 05: Criando APIs para o Front-end](#aula-05---criando-apis-para-o-front-end)
+- [Aula 06: Projetos Front-end](#aula-06---projetos-front-end)
 
 ---
 
@@ -131,6 +133,14 @@ Evolução do projeto para um aplicativo de notas (*Notes App*) persistido em ar
 
 ### 2. Documentação com Postman
 Utilização do Postman para testes manuais, organização de coleções de requisições HTTP, verificação de códigos de status (`200 OK`, `404 Not Found`) e simulação de ambientes.
+
+---
+
+## Aula 06 - Projetos Front-end
+
+### Atividade documentada
+- [Projeto Integrador Atende+: escopo, backlog priorizado, histórias, Kanban, branches e Definition of Done](<Aula_06_Projetos_Front-end/Projeto_Integrador_AtendeMais/>)
+- O Kanban foi registrado em Markdown no repositório local; nenhum board externo, repositório ou deploy foi criado nesta atividade.
 
 ---
 
