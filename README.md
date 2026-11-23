@@ -18,7 +18,7 @@ Abaixo estão listados os links de acesso direto aos deploys das aplicações de
 | **Aula 02 / 03** | Projeto React.js | [Acessar Projeto (Vercel)](https://projeto-react-01-three.vercel.app/) · [Código-fonte local](<Aula_02_Configuração do Ambiente de Desenvolvimento/React/>) |
 | **Aula 03** | Projeto Vue.js (Vite) | [Deploy anterior (template)](https://meu-projeto-vue-pi.vercel.app/) · [Código-fonte local](<Aula_03_Projetos com Frameworks Front-end/Projeto_02_Vue/>) |
 | **Aula 03** | Projeto Angular | [Deploy anterior (dashboard de clima)](https://meu-app-angular-1.vercel.app/) · [Código-fonte local](<Aula_03_Projetos com Frameworks Front-end/Projeto_03_Angular/>) |
-| **Aula 03** | Projeto Next.js (Full-stack) | [Acessar Projeto (Vercel)](https://projeto-next-sooty.vercel.app/) |
+| **Aula 03** | Projeto 04 — Next.js | [Deploy anterior (template genérico)](https://projeto-next-sooty.vercel.app/) · [Código-fonte local](<Aula_03_Projetos com Frameworks Front-end/Projeto_04_Nextjs/>) |
 
 ---
 
