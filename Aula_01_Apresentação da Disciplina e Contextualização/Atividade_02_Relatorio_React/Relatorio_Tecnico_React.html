@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório técnico — React</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 0;
+        }
+
+        :root {
+            color: #172033;
+            background: #e7ebf1;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 10.5pt;
+            line-height: 1.38;
+            print-color-adjust: exact;
+            -webkit-print-color-adjust: exact;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .page {
+            position: relative;
+            width: 210mm;
+            min-height: 297mm;
+            margin: 8mm auto;
+            padding: 19mm 20mm 21mm;
+            background: #fff;
+            box-shadow: 0 2mm 7mm #17203324;
+            page-break-after: always;
+            break-after: page;
+        }
+
+        .page:last-child {
+            page-break-after: auto;
+            break-after: auto;
+        }
+
+        .page-label {
+            margin: 0 0 7mm;
+            color: #48607e;
+            font-size: 8.5pt;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        h1,
+        h2,
+        h3 {
+            margin-top: 0;
+            color: #162a48;
+            line-height: 1.2;
+        }
+
+        h1 {
+            margin-bottom: 5mm;
+            font-size: 25pt;
+        }
+
+        h2 {
+            margin-bottom: 3mm;
+            font-size: 15pt;
+        }
+
+        h3 {
+            margin-bottom: 2mm;
+            font-size: 11pt;
+        }
+
+        p {
+            margin: 0 0 3mm;
+            text-align: justify;
+        }
+
+        ul,
+        ol {
+            margin: 1mm 0 4mm;
+            padding-left: 6mm;
+        }
+
+        li {
+            margin-bottom: 1.5mm;
+        }
+
+        a {
+            color: #1453a6;
+            overflow-wrap: anywhere;
+        }
+
+        .section {
+            margin-bottom: 5mm;
+        }
+
+        .callout {
+            margin: 4mm 0;
+            padding: 3mm 4mm;
+            border-left: 3px solid #1976c9;
+            background: #eef5fc;
+        }
+
+        .small {
+            font-size: 9pt;
+        }
+
+        .table-wrap {
+            margin: 2mm 0 4mm;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 8.8pt;
+            line-height: 1.3;
+        }
+
+        th,
+        td {
+            padding: 2mm 2.5mm;
+            border: 0.3mm solid #cbd5e1;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            color: #fff;
+            background: #203d66;
+        }
+
+        pre {
+            margin: 2mm 0 3mm;
+            padding: 3mm;
+            overflow-wrap: anywhere;
+            white-space: pre-wrap;
+            border-radius: 2mm;
+            background: #f0f3f8;
+            color: #172033;
+            font: 8.5pt/1.35 Consolas, "Courier New", monospace;
+        }
+
+        .page-footer {
+            position: absolute;
+            right: 20mm;
+            bottom: 10mm;
+            left: 20mm;
+            display: flex;
+            justify-content: space-between;
+            padding-top: 2mm;
+            border-top: 0.25mm solid #cbd5e1;
+            color: #53647b;
+            font-size: 8pt;
+        }
+
+        .cover {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            color: #fff;
+            background: #10233d;
+        }
+
+        .cover h1,
+        .cover h2,
+        .cover p {
+            color: #fff;
+        }
+
+        .cover-top {
+            padding-bottom: 4mm;
+            border-bottom: 1mm solid #47b8eb;
+            font-size: 12pt;
+            font-weight: 700;
+            letter-spacing: 0.06em;
+        }
+
+        .cover-main {
+            margin: 18mm 0;
+        }
+
+        .cover-kicker {
+            margin-bottom: 5mm;
+            color: #9edcf6 !important;
+            font-size: 11pt;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+
+        .cover h1 {
+            max-width: 150mm;
+            font-size: 34pt;
+            line-height: 1.12;
+        }
+
+        .cover-subtitle {
+            max-width: 145mm;
+            color: #d7e3f0 !important;
+            font-size: 14pt;
+        }
+
+        .cover-meta {
+            padding: 5mm;
+            border: 0.35mm solid #55708f;
+            background: #1a3454;
+        }
+
+        .cover-meta p {
+            margin-bottom: 2mm;
+            text-align: left;
+        }
+
+        .cover-meta p:last-child {
+            margin-bottom: 0;
+        }
+
+        .cover-year {
+            align-self: center;
+            margin: 0;
+            color: #d7e3f0 !important;
+        }
+
+        .reference-list {
+            padding-left: 6mm;
+        }
+
+        .reference-list li {
+            margin-bottom: 3mm;
+            overflow-wrap: anywhere;
+            text-align: left;
+        }
+
+        .analysis-page .section {
+            margin-bottom: 2mm;
+        }
+
+        .analysis-page p {
+            margin-bottom: 1.5mm;
+        }
+
+        .analysis-page ol {
+            margin-bottom: 1.5mm;
+        }
+
+        .analysis-page li {
+            margin-bottom: 0.5mm;
+        }
+
+        @media screen {
+            .page {
+                min-height: 297mm;
+            }
+        }
+
+        @media print {
+            :root {
+                background: #fff;
+            }
+
+            .page {
+                min-height: 297mm;
+                margin: 0;
+                box-shadow: none;
+                page-break-after: always;
+                break-after: page;
+            }
+
+            .page:last-child {
+                page-break-after: auto;
+                break-after: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="page cover">
+            <div class="cover-top">SENAI · ANÁLISE E DESENVOLVIMENTO DE SISTEMAS</div>
+            <div class="cover-main">
+                <p class="cover-kicker">Frameworks Front-end · Atividade 02</p>
+                <h1>React na construção de interfaces web</h1>
+                <p class="cover-subtitle">Características, vantagens, aplicações e análise de um projeto prático.</p>
+            </div>
+            <div class="cover-meta">
+                <p><strong>Relatório técnico</strong></p>
+                <p>Disciplina: Frameworks Front-end</p>
+                <p>Professor: Me. Deivison S. Takatu</p>
+                <p>Estudante(s): <strong>[preencher nome do estudante ou integrantes]</strong></p>
+            </div>
+            <p class="cover-year">2026</p>
+        </section>
+
+        <section class="page">
+            <p class="page-label">1 · Introdução e método</p>
+            <h1>Contexto e objetivo</h1>
+            <div class="section">
+                <h2>1.1 Introdução</h2>
+                <p>Interfaces web que precisam responder a formulários, filtros e dados atualizados podem se tornar difíceis de manter quando estrutura, estado e manipulação do documento ficam misturados. React organiza a interface em componentes e descreve, de forma declarativa, o que cada componente deve exibir para determinado conjunto de propriedades e estado. A biblioteca é mantida em código aberto pela Meta e por uma comunidade de colaboradores. Seu escopo principal é a construção de interfaces; a aplicação normalmente combina React com outras ferramentas para roteamento, compilação e integração com serviços.</p>
+                <p>O objetivo deste relatório é explicar as características técnicas de React, discutir seus benefícios e limites, identificar cenários de uso compatíveis e relacionar esses conceitos a um exemplo que já existe neste repositório: o gerenciador de notas desenvolvido com React e Vite.</p>
+            </div>
+            <div class="section">
+                <h2>1.2 Método e delimitação</h2>
+                <p>A análise foi realizada por consulta à documentação oficial de React e Vite e pela leitura estática dos arquivos do projeto de notas. Portanto, o exemplo documenta a estrutura e os fluxos observáveis no código; este relatório não afirma que o projeto tenha sido compilado, testado em produção ou submetido a uma avaliação de mercado.</p>
+                <p>O foco está no front-end. A API Express e sua persistência são tratadas como dependências externas: o cliente envia requisições HTTP, mas não controla como o servidor armazena os registros.</p>
+            </div>
+            <div class="section">
+                <h2>1.3 Biblioteca e ecossistema</h2>
+                <p>Embora seja comum chamar React de framework em conversas sobre desenvolvimento front-end, tecnicamente React é uma biblioteca para interfaces. Essa distinção importa: React oferece componentes, renderização e mecanismos de interação, mas não obriga a adoção de um roteador, um formato de pastas ou uma camada específica de comunicação com APIs. A liberdade permite adaptar a solução; em contrapartida, exige escolhas explícitas e consistentes do projeto.</p>
+            </div>
+            <aside class="callout">
+                <strong>Decisão de escopo:</strong> React foi escolhido porque já é usado na aplicação de notas deste repositório; assim, os conceitos discutidos podem ser relacionados a código existente, em vez de a um exemplo hipotético.
+            </aside>
+            <div class="page-footer"><span>Frameworks Front-end · SENAI</span><span>Página 2</span></div>
+        </section>
+
+        <section class="page">
+            <p class="page-label">2 · Características principais</p>
+            <h1>Características técnicas do React</h1>
+            <div class="section">
+                <h2>2.1 Componentes e JSX</h2>
+                <p>A interface é decomposta em componentes reutilizáveis, normalmente funções JavaScript que retornam JSX. JSX permite descrever a estrutura próxima ao HTML e inserir expressões JavaScript entre chaves. A sintaxe é transformada pelo processo de build; não é HTML nem uma nova linguagem executada diretamente pelo navegador. A composição de componentes ajuda a separar partes da interface, como formulário, lista e cabeçalho, conforme o produto evolui [1].</p>
+            </div>
+            <div class="section">
+                <h2>2.2 Propriedades, estado e eventos</h2>
+                <p>Props transportam dados do componente pai para o filho. Estado representa informação que pode mudar com a interação do usuário ou com respostas do sistema. O Hook <code>useState</code> associa um estado a um componente e fornece uma função para atualizá-lo. Eventos declarados em JSX — por exemplo, <code>onClick</code> e <code>onChange</code> — conectam ações da interface a essas atualizações. O fluxo resultante é declarativo: o componente descreve a tela a partir do estado atual [2].</p>
+            </div>
+            <div class="section">
+                <h2>2.3 Renderização, listas e efeitos</h2>
+                <p>Quando props ou estado mudam, React renderiza novamente a descrição do componente e aplica as atualizações necessárias ao DOM. A reconciliação compara as árvores de elementos; a noção de Virtual DOM é uma forma de explicar essa etapa, mas não deve ser interpretada como garantia de que React será sempre mais rápido em qualquer aplicação. Em listas, a propriedade <code>key</code> oferece uma identidade estável para cada item e auxilia React a acompanhar inserções, remoções e reordenações.</p>
+                <p>O Hook <code>useEffect</code> permite sincronizar um componente com sistemas externos, como uma API ou uma assinatura. A documentação recomenda distinguir esse tipo de efeito de ações iniciadas por eventos e evitar efeitos desnecessários [3].</p>
+            </div>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr><th>Conceito</th><th>Para que serve</th><th>Exemplo no projeto de notas</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Componente e JSX</td><td>Descrever e compor a interface.</td><td>Componente raiz <code>App</code>.</td></tr>
+                        <tr><td>Estado</td><td>Manter valores que afetam a renderização.</td><td>Notas, campos do formulário, estado de edição e carregamento.</td></tr>
+                        <tr><td>Efeito</td><td>Sincronizar com sistemas externos.</td><td>Carregar a lista da API ao abrir a tela.</td></tr>
+                        <tr><td>Lista e <code>key</code></td><td>Representar coleções e preservar a identidade dos itens.</td><td><code>notes.map</code> com <code>nota.id</code>.</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="page-footer"><span>Frameworks Front-end · SENAI</span><span>Página 3</span></div>
+        </section>
+
+        <section class="page">
+            <p class="page-label">3 · Vantagens e limitações</p>
+            <h1>Benefícios e custos da adoção</h1>
+            <div class="section">
+                <h2>3.1 Vantagens</h2>
+                <ul>
+                    <li><strong>Composição:</strong> componentes podem encapsular partes da interface e ser reutilizados sem duplicar o mesmo markup em todas as telas.</li>
+                    <li><strong>Atualização previsível:</strong> o estado fica explícito no componente; uma interação pode atualizar os dados e fazer a interface refletir o novo estado.</li>
+                    <li><strong>Ecossistema:</strong> há documentação, ferramentas e bibliotecas comunitárias para necessidades que ficam fora do núcleo, como roteamento, testes e integração com APIs.</li>
+                    <li><strong>Flexibilidade de adoção:</strong> é possível compor a UI com ferramentas compatíveis com o tamanho e os requisitos da aplicação.</li>
+                    <li><strong>Reuso entre plataformas no ecossistema:</strong> conceitos de composição também aparecem em ferramentas como React Native, que é uma tecnologia separada para aplicações nativas.</li>
+                </ul>
+                <p>Essas vantagens não dispensam planejamento. Componentes demasiadamente grandes, estado duplicado ou efeitos usados para toda transformação podem tornar a aplicação mais difícil de compreender. A documentação oficial recomenda estruturar o estado e manter o fluxo de dados claro [2, 3].</p>
+            </div>
+            <div class="section">
+                <h2>3.2 Limitações e custos</h2>
+                <ul>
+                    <li><strong>Aprendizado inicial:</strong> JSX, fluxo unidirecional de dados, estado e regras de Hooks exigem familiaridade com JavaScript e com a forma declarativa de programar.</li>
+                    <li><strong>Decisões do ecossistema:</strong> o núcleo não define sozinho rotas, acesso à API, validação, estilos ou arquitetura; bibliotecas adicionais podem aumentar manutenção e dependências.</li>
+                    <li><strong>Qualidade não automática:</strong> acessibilidade, responsividade, segurança de dados e mensagens de erro dependem de decisões e implementação do projeto.</li>
+                    <li><strong>Possível excesso de complexidade:</strong> para uma página estática simples, a configuração e o build podem custar mais do que resolver o problema com HTML e CSS.</li>
+                </ul>
+            </div>
+            <div class="page-footer"><span>Frameworks Front-end · SENAI</span><span>Página 4</span></div>
+        </section>
+
+        <section class="page">
+            <p class="page-label">4 · Aplicações de React no mercado</p>
+            <h1>Interfaces e cenários de uso</h1>
+            <div class="section">
+                <h2>4.1 Exemplos por domínio</h2>
+                <p>React é compatível com produtos cujas interfaces atualizam conteúdo em resposta a navegação, formulários e dados recebidos de serviços. As categorias a seguir exemplificam como a composição de componentes pode contribuir; são cenários de uso, não uma pesquisa estatística sobre o mercado.</p>
+                <div class="table-wrap">
+                    <table>
+                        <thead><tr><th>Domínio</th><th>Exemplo de interface</th><th>Contribuição dos componentes</th></tr></thead>
+                        <tbody>
+                            <tr><td>Comércio eletrônico</td><td>Catálogo com filtros e cartões de produto.</td><td>Reaproveitar cartões e manter a listagem sincronizada com filtros e dados.</td></tr>
+                            <tr><td>Administração</td><td>Painel com tabelas e formulários de cadastro.</td><td>Compor controles de interface e atualizar resultados após operações.</td></tr>
+                            <tr><td>Atendimento</td><td>Portal de solicitações e acompanhamento de status.</td><td>Representar estados do fluxo e comunicar feedback em cada interação.</td></tr>
+                            <tr><td>Conteúdo e serviços</td><td>Busca, consulta e detalhes obtidos por API.</td><td>Organizar estados de carregamento, resultados e ausência de dados.</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="section">
+                <h2>4.2 Adequação à necessidade</h2>
+                <p>A escolha deve considerar a complexidade do produto, a experiência da equipe, a integração com serviços e os requisitos de renderização, além do custo de configuração e manutenção. Para páginas estáticas de baixa interação, HTML e CSS podem ser suficientes. Quando rotas avançadas, renderização no servidor ou recursos full-stack forem necessários, um framework do ecossistema React pode ser avaliado; esses recursos não pertencem automaticamente à biblioteca React.</p>
+                <p>Essa distinção ajuda a comparar tecnologias sem atribuir a React resultados que dependem de ferramentas adicionais ou da arquitetura do produto.</p>
+            </div>
+            <aside class="callout small"><strong>Limite da análise:</strong> os cenários descrevem aplicações possíveis e não indicam percentuais de vagas, participação de mercado ou superioridade universal.</aside>
+            <div class="page-footer"><span>Frameworks Front-end · SENAI</span><span>Página 5</span></div>
+        </section>
+
+        <section class="page">
+            <p class="page-label">5 · Exemplo prático: fluxos</p>
+            <h1>Gerenciador de notas com React</h1>
+            <div class="section">
+                <h2>5.1 Necessidade e organização</h2>
+                <p>O projeto <em>projeto_notas_front</em>, localizado nos materiais da Aula 05, apresenta uma interface para gerenciar notas. Cada nota possui identificador, título e texto. O cliente comunica-se com a coleção <code>/api/notes</code> de uma API configurada na aplicação. A interface e o servidor são projetos separados; o front-end não grava diretamente no arquivo de dados do back-end.</p>
+                <p>O componente <code>App</code> mantém o array de notas, os valores do formulário, o identificador em edição e o estado de carregamento. No primeiro render, <code>useEffect</code> solicita os dados ao servidor; a resposta alimenta o estado, que passa a dirigir a lista apresentada na tela. A listagem é produzida com <code>map</code> e cada linha usa <code>nota.id</code> como chave.</p>
+            </div>
+            <div class="table-wrap">
+                <table>
+                    <thead><tr><th>Ação do usuário</th><th>Operação HTTP</th><th>Atualização da interface</th></tr></thead>
+                    <tbody>
+                        <tr><td>Abrir a tela</td><td>GET na coleção de notas.</td><td>O estado de carregamento é atualizado e a lista recebida é renderizada.</td></tr>
+                        <tr><td>Criar uma nota</td><td>POST com título e texto.</td><td>Após resposta bem-sucedida, limpa-se o formulário e a lista é carregada novamente.</td></tr>
+                        <tr><td>Editar uma nota</td><td>PUT para o identificador selecionado.</td><td>O formulário recebe os valores atuais e é reiniciado após salvar.</td></tr>
+                        <tr><td>Excluir uma nota</td><td>DELETE para o identificador selecionado.</td><td>Após confirmação, a lista é carregada novamente.</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="page-footer"><span>Frameworks Front-end · SENAI</span><span>Página 6</span></div>
+        </section>
+
+        <section class="page">
+            <p class="page-label">6 · Aplicação prática: interface</p>
+            <h1>Estado, renderização e ferramentas</h1>
+            <div class="section">
+                <h2>6.1 Trecho representativo</h2>
+                <pre><code>const [notes, setNotes] = useState([]);
+
+useEffect(() =&gt; {
+    carregarNotas();
+}, []);
+
+// A interface é derivada do estado da coleção.
+{notes.map((nota) =&gt; (
+    &lt;li key={nota.id}&gt;
+        &lt;h3&gt;{nota.titulo}&lt;/h3&gt;
+        &lt;p&gt;{nota.texto}&lt;/p&gt;
+    &lt;/li&gt;
+))}</code></pre>
+                <p>O trecho ilustra estado, efeito de carregamento e renderização de lista com chave. No código do projeto, os botões associam eventos às rotinas de edição e exclusão; o identificador selecionado distingue criação de atualização.</p>
+            </div>
+            <div class="section">
+                <h2>6.2 Ferramentas e escopo observado</h2>
+                <p>O <code>package.json</code> declara React e React DOM na versão <code>19.2.8</code> e Vite na versão <code>8.3.0</code>. Vite fornece servidor de desenvolvimento e build para ativos de produção; não substitui React nem fornece, por si só, a lógica do gerenciador [4]. O componente raiz está em <code>src/App.jsx</code>, com estilos globais e locais em arquivos CSS.</p>
+                <p>A implementação demonstra operações de criação, listagem, edição e exclusão na interface. Não foi identificada uma chamada de leitura individual por ID na tela. Essa observação delimita o exemplo e não significa que uma rota da API deva ser simulada no cliente.</p>
+            </div>
+            <div class="page-footer"><span>Frameworks Front-end · SENAI</span><span>Página 7</span></div>
+        </section>
+
+        <section class="page analysis-page">
+            <p class="page-label">7 · Análise e conclusão</p>
+            <h1>Resultados da análise e recomendações</h1>
+            <div class="section">
+                <h2>7.1 Coerência da solução</h2>
+                <p>Para um gerenciador de notas, React é compatível com a necessidade de atualizar a listagem e o formulário em resposta a eventos e dados recebidos da API. O exemplo torna visível a relação entre estado e renderização sem exigir que a equipe mantenha manualmente cada alteração no DOM. A combinação com Vite mantém o projeto executável por comandos padronizados, desde que Node.js e as dependências estejam instalados [4].</p>
+                <p>O exemplo também mostra decisões a revisar numa evolução. O componente concentra estado, requisições e interface no mesmo arquivo; separar formulário, item e lista poderia melhorar leitura quando o escopo crescer. Além disso, a URL da API está definida diretamente no código e os erros são registrados no console. Em um projeto ampliado, seria desejável configurar ambientes e apresentar feedback compreensível ao usuário. Essas são recomendações de evolução, não afirmações de funcionalidades já concluídas.</p>
+            </div>
+            <div class="section">
+                <h2>7.2 Critérios para uma adoção responsável</h2>
+                <ol>
+                    <li>Definir componentes de acordo com responsabilidades de interface identificáveis, evitando fragmentar elementos sem necessidade.</li>
+                    <li>Manter uma única fonte de verdade para os dados da tela e atualizar arrays de estado sem mutação direta.</li>
+                    <li>Usar efeitos para sincronização externa e explicitar estados de carregamento, vazio, sucesso e erro.</li>
+                    <li>Escolher dependências adicionais considerando manutenção, compatibilidade e necessidades reais de navegação.</li>
+                    <li>Verificar teclado, nomes acessíveis, contraste e adaptação a dispositivos junto com os fluxos principais.</li>
+                </ol>
+            </div>
+            <div class="section">
+                <h2>7.3 Considerações finais</h2>
+                <p>React oferece um modelo declarativo e componível para interfaces com estado e interação. Componentes, JSX, props, estado, efeitos e chaves de listas são conceitos que ajudam a organizar produtos como o gerenciador de notas analisado. A flexibilidade do ecossistema é útil, mas desloca para a equipe decisões de arquitetura e a responsabilidade por qualidade, acessibilidade e tratamento de falhas.</p>
+                <p>A escolha adequada depende do escopo. Para aplicações com fluxos dinâmicos e dados de API, React pode reduzir acoplamento à manipulação manual do DOM e facilitar evolução incremental. Para páginas simples ou equipes sem necessidade de uma camada de componentes, seu custo de configuração pode ser desnecessário. A conclusão, portanto, é contextual: o valor da biblioteca decorre de resolver as necessidades observáveis do produto, não de uma preferência universal.</p>
+            </div>
+            <aside class="callout"><strong>Síntese:</strong> no projeto de notas, React organiza a interação da interface; Vite fornece o ambiente de desenvolvimento e build, enquanto a API permanece responsável pelos dados.</aside>
+            <div class="page-footer"><span>Frameworks Front-end · SENAI</span><span>Página 8</span></div>
+        </section>
+
+        <section class="page">
+            <p class="page-label">Referências</p>
+            <h1>Fontes consultadas</h1>
+            <p>Documentação técnica consultada para fundamentar a descrição dos componentes, da interatividade, dos efeitos e das ferramentas do exemplo.</p>
+            <ol class="reference-list">
+                <li><strong>REACT.</strong> <em>Describing the UI.</em> React documentation. Disponível em: <a href="https://react.dev/learn/describing-the-ui">https://react.dev/learn/describing-the-ui</a>. Acesso em: 22 nov. 2026.</li>
+                <li><strong>REACT.</strong> <em>Adding Interactivity.</em> React documentation. Disponível em: <a href="https://react.dev/learn/adding-interactivity">https://react.dev/learn/adding-interactivity</a>. Acesso em: 22 nov. 2026.</li>
+                <li><strong>REACT.</strong> <em>Synchronizing with Effects.</em> React documentation. Disponível em: <a href="https://react.dev/learn/synchronizing-with-effects">https://react.dev/learn/synchronizing-with-effects</a>. Acesso em: 22 nov. 2026.</li>
+                <li><strong>VITE.</strong> <em>Getting Started.</em> Vite documentation. Disponível em: <a href="https://vite.dev/guide/">https://vite.dev/guide/</a>. Acesso em: 22 nov. 2026.</li>
+                <li><strong>PROJETO_NOTAS_FRONT.</strong> Aplicação React de gerenciamento de notas. Arquivos <code>src/App.jsx</code> e <code>package.json</code>. Repositório da disciplina, Aula 05, Atividade 01. Material consultado localmente em 22 nov. 2026.</li>
+            </ol>
+            <div class="section">
+                <h2>Observação sobre a versão</h2>
+                <p>As versões citadas do projeto correspondem aos valores declarados em seu <code>package.json</code> no momento da análise. Os conteúdos e links da documentação oficial podem ser atualizados por seus mantenedores.</p>
+            </div>
+            <div class="page-footer"><span>Frameworks Front-end · SENAI</span><span>Página 9</span></div>
+        </section>
+    </main>
+</body>
+</html>
