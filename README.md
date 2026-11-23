@@ -21,6 +21,7 @@ Abaixo estão listados os links de acesso direto aos deploys das aplicações de
 | **Aula 03** | Projeto 04 — Next.js | [Deploy anterior (template genérico)](https://projeto-next-sooty.vercel.app/) · [Código-fonte local](<Aula_03_Projetos com Frameworks Front-end/Projeto_04_Nextjs/>) |
 | **Aula 05** | Gerenciador de notas (React + Express) | Deploy pendente · [Código e instruções locais](<Aula_05_Consumindo APIs no Front-end/Atividade_aula05/>) |
 | **Aula 06** | Projeto Integrador — Atende+ | [Escopo, backlog e Kanban locais](<Aula_06_Projetos_Front-end/Projeto_Integrador_AtendeMais/>) |
+| **Aula 07** | Atividade 01 — Box Model e Flexbox | Deploy pendente · [Código e instruções locais](<Aula_07_Frameworks_CSS/Atividade_01_Box_Model_Flexbox/>) |
 
 ---
 
@@ -31,6 +32,7 @@ Abaixo estão listados os links de acesso direto aos deploys das aplicações de
 - [Aula 04: Consumindo APIs no Front-end](#aula-04---consumindo-apis-no-front-end)
 - [Aula 05: Criando APIs para o Front-end](#aula-05---criando-apis-para-o-front-end)
 - [Aula 06: Projetos Front-end](#aula-06---projetos-front-end)
+- [Aula 07: Frameworks CSS](#aula-07---frameworks-css)
 
 ---
 
@@ -141,6 +143,14 @@ Utilização do Postman para testes manuais, organização de coleções de requ
 ### Atividade documentada
 - [Projeto Integrador Atende+: escopo, backlog priorizado, histórias, Kanban, branches e Definition of Done](<Aula_06_Projetos_Front-end/Projeto_Integrador_AtendeMais/>)
 - O Kanban foi registrado em Markdown no repositório local; nenhum board externo, repositório ou deploy foi criado nesta atividade.
+
+---
+
+## Aula 07 - Frameworks CSS
+
+### Atividade 01 documentada
+- [Box Model e vinte demonstrações de Flexbox](<Aula_07_Frameworks_CSS/Atividade_01_Box_Model_Flexbox/>)
+- A Atividade 02 com Tailwind CSS permanece pendente; nenhum deploy externo foi feito.
 
 ---
 
