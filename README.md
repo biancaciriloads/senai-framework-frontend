@@ -10,14 +10,13 @@ Este portfólio reúne os materiais de aula, atividades práticas, projetos e do
 ---
 
 ## 🗂️ Índice completo de entregas
-Os links desta tabela apontam para as cópias e documentos locais deste repositório. Deploys ou repositórios remotos não foram criados para as entregas marcadas como pendentes. URLs antigas são identificadas quando não representam a versão atual.
+Os links desta tabela apontam para as cópias e documentos locais deste repositório. Deploys remotos não serão feitos nesta etapa; a lista de pastas e plataformas pendentes está indicada abaixo. URLs antigas não são tratadas como publicação da versão atual.
 
 | Aula | Atividade / projeto | Código e documentação local | Publicação |
 | :--- | :--- | :--- | :--- |
-| **Aula 01** | Atividade 01 — Jogo de Adivinhação (Vanilla JS) | [Aplicação e README](<Aula_01_Apresentação da Disciplina e Contextualização/Atividade_01_VanillaJS/>) | [Publicado anteriormente](https://senai-projeto-vanilla-js-rho.vercel.app/) |
+| **Aula 01** | Atividade 01 — Jogo de Adivinhação (Vanilla JS) | [Aplicação e README](<Aula_01_Apresentação da Disciplina e Contextualização/Atividade_01_VanillaJS/>) | Deploy anterior; verificar antes de reutilizar |
 | **Aula 01** | Atividade 02 — Relatório técnico sobre React | [PDF, fonte HTML e README](<Aula_01_Apresentação da Disciplina e Contextualização/Atividade_02_Relatorio_React/>) | Não se aplica |
-| **Aula 02** | Projeto React com Phaser | [Projeto e instruções](<Aula_02_Configuração do Ambiente de Desenvolvimento/React/>) | [Publicado anteriormente](https://projeto-react-01-three.vercel.app/) |
-| **Aula 02** | Atividade 01 — Projeto React | [Cópia local e README](<Aula_02_Configuração do Ambiente de Desenvolvimento/Atividade_01_Projeto_React/>) | Somente local |
+| **Aula 02** | Atividade 01 — Projeto React com Phaser | [Projeto e instruções](<Aula_02_Configuração do Ambiente de Desenvolvimento/Atividade_01_Projeto_React/>) | Deploy anterior; verificar antes de reutilizar |
 | **Aula 03** | Projeto 02 — Atendimento hospitalar com Vue | [Código e README](<Aula_03_Projetos com Frameworks Front-end/Projeto_02_Vue/>) | Versão atual pendente; deploy anterior de template não corresponde |
 | **Aula 03** | Projeto 03 — Atendimento hospitalar com Angular | [Código e README](<Aula_03_Projetos com Frameworks Front-end/Projeto_03_Angular/>) | Versão atual pendente; deploy anterior de dashboard de clima não corresponde |
 | **Aula 03** | Projeto 04 — Atendimento hospitalar com Next.js | [Código e README](<Aula_03_Projetos com Frameworks Front-end/Projeto_04_Nextjs/>) | Versão atual pendente; deploy anterior de template não corresponde |
@@ -30,6 +29,26 @@ Os links desta tabela apontam para as cópias e documentos locais deste reposit�
 | **Aula 08** | Projeto React — PixelPlay | [Código e README](<Aula_08_Projeto_React/>) | Pendente; checklist no README da atividade |
 | **Aula 09** | Projeto React 02 — Mural Descobertas | [Código e README](<Aula_09_Projeto_React_02/>) | Pendente; checklist no README da atividade |
 
+### Pastas pendentes de deploy manual
+
+Configure cada pasta indicada como **Root Directory** do serviço. As URLs ficam para preenchimento após os deploys manuais.
+
+| Aplicação | Pasta do projeto | Plataforma | URL |
+| :--- | :--- | :--- | :--- |
+| Jogo de Adivinhação | [Atividade_01_VanillaJS](<Aula_01_Apresentação da Disciplina e Contextualização/Atividade_01_VanillaJS/>) | Vercel | [ ] inserir após deploy |
+| Projeto React com Phaser | [Atividade_01_Projeto_React](<Aula_02_Configuração do Ambiente de Desenvolvimento/Atividade_01_Projeto_React/>) | Vercel | [ ] inserir após deploy |
+| Projeto Vue | [Projeto_02_Vue](<Aula_03_Projetos com Frameworks Front-end/Projeto_02_Vue/>) | Vercel | [ ] inserir após deploy |
+| Projeto Angular | [Projeto_03_Angular](<Aula_03_Projetos com Frameworks Front-end/Projeto_03_Angular/>) | Vercel | [ ] inserir após deploy |
+| Projeto Next.js | [Projeto_04_Nextjs](<Aula_03_Projetos com Frameworks Front-end/Projeto_04_Nextjs/>) | Vercel | [ ] inserir após deploy |
+| API do Relógio | [Relogio_API](<Aula_04_Consumindo APIs no Front-end/Atividade_02/Relogio_API/>) | Render | [ ] inserir após deploy |
+| Frontend do Relógio | [Relogio_Frontend](<Aula_04_Consumindo APIs no Front-end/Atividade_02/Relogio_Frontend/>) | Vercel | [ ] inserir após deploy |
+| API do Gerenciador de Notas | [projeto_notas_api](<Aula_05_Consumindo APIs no Front-end/Atividade_aula05/projeto_notas_api/>) | Render | [ ] inserir após deploy |
+| Frontend do Gerenciador de Notas | [projeto_notas_front](<Aula_05_Consumindo APIs no Front-end/Atividade_aula05/projeto_notas_front/>) | Vercel | [ ] inserir após deploy |
+| Demonstrações de Box Model e Flexbox | [Atividade_01_Box_Model_Flexbox](<Aula_07_Frameworks_CSS/Atividade_01_Box_Model_Flexbox/>) | Vercel | [ ] inserir após deploy |
+| Agenda Atende+ com Tailwind | [Atividade_02_Tailwind](<Aula_07_Frameworks_CSS/Atividade_02_Tailwind/>) | Vercel | [ ] inserir após deploy |
+| PixelPlay | [Aula_08_Projeto_React](<Aula_08_Projeto_React/>) | Vercel | [ ] inserir após deploy |
+| Mural Descobertas | [Aula_09_Projeto_React_02](<Aula_09_Projeto_React_02/>) | Vercel | [ ] inserir após deploy |
+
 ### Materiais de aula e plano de ensino
 
 | Aula | Material local |
@@ -41,7 +60,7 @@ Os links desta tabela apontam para as cópias e documentos locais deste reposit�
 | **Aula 05** | [Resumo](<Aula_05_Consumindo APIs no Front-end/Resumo_Aula_05.md>) · [Apresentação em PDF](<Aula_05_Consumindo APIs no Front-end/Aula 05 - Criando APIs para o Front-end.pdf>) |
 | **Disciplina** | [Plano de Ensino em PDF](<Plano de Ensino/Plano de Ensino - Frameworks Front-end.pdf>) |
 
-**Escopo atual:** o material oficial disponível neste workspace vai até a Aula 09; todas as aulas e entregas locais listadas acima estão indexadas. Links de publicação que faltam poderão ser preenchidos nos READMEs das respectivas atividades após o deploy manual.
+**Escopo atual:** o material oficial disponível neste workspace vai até a Aula 09; todas as entregas locais indexadas acima apontam para as pastas mantidas no repositório. Planejamento e relatórios não precisam de deploy. Os links remotos serão preenchidos após publicação manual.
 
 ---
 
@@ -196,4 +215,4 @@ Utilização do Postman para testes manuais, organização de coleções de requ
 ---
 
 ## 🚀 Conclusão e Entrega das Atividades
-Os links de repositórios e deploys pendentes serão adicionados aos READMEs das respectivas atividades após a publicação manual.
+Os links de repositórios e deploys pendentes serão adicionados aos READMEs das respectivas atividades após a publicação manual. A matriz acima identifica as pastas e plataformas para essa etapa.
