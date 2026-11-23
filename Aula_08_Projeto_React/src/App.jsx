@@ -91,7 +91,7 @@ export default function App() {
                 value={searchTerm}
                 onChange={(event) => setSearchTerm(event.target.value)}
               />
-              <kbd>/</kbd>
+              <kbd aria-hidden="true">/</kbd>
             </label>
           </div>
 

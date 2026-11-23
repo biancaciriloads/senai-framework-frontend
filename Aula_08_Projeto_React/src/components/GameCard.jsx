@@ -9,16 +9,16 @@ export default function GameCard({ game, isFavorite, onToggleFavorite }) {
         <span className="cover-kicker">{game.studio}</span>
         <span className="cover-emoji" aria-hidden="true">{game.emoji}</span>
         <span className="cover-title">{game.coverTitle}</span>
-        <button
-          className={`favorite-button${isFavorite ? ' is-favorite' : ''}`}
-          type="button"
-          aria-label={isFavorite ? `Remover ${game.title} dos favoritos` : `Adicionar ${game.title} aos favoritos`}
-          aria-pressed={isFavorite}
-          onClick={() => onToggleFavorite(game.id)}
-        >
-          {isFavorite ? '♥' : '♡'}
-        </button>
       </div>
+      <button
+        className={`favorite-button${isFavorite ? ' is-favorite' : ''}`}
+        type="button"
+        aria-label={isFavorite ? `Remover ${game.title} dos favoritos` : `Adicionar ${game.title} aos favoritos`}
+        aria-pressed={isFavorite}
+        onClick={() => onToggleFavorite(game.id)}
+      >
+        {isFavorite ? '♥' : '♡'}
+      </button>
       <div className="game-info">
         <div className="game-meta">
           <span>{game.category}</span>

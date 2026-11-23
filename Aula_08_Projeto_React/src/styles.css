@@ -401,6 +401,7 @@ h1 span {
 
 .game-card {
   min-width: 0;
+  position: relative;
   overflow: hidden;
   border: 1px solid var(--color-line);
   border-radius: 11px;
@@ -494,6 +495,7 @@ h1 span {
   position: absolute;
   top: 10px;
   right: 10px;
+  z-index: 1;
   display: grid;
   place-items: center;
   border: 1px solid rgb(255 255 255 / 27%);
