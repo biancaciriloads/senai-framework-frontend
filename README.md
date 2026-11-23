@@ -84,6 +84,9 @@ Padrão **`MAJOR.MINOR.PATCH`**:
 
 ## Aula 04 - Consumindo APIs no Front-end
 
+### Atividades documentadas
+- [Atividade 01: pesquisa de projetos que consomem APIs](<Aula_04_Consumindo APIs no Front-end/Atividade_01.md>)
+
 ### 1. Conceitos de API e Protocolo HTTP
 - **REST:** Estilo arquitetural cliente-servidor *stateless* baseado em URIs e transferência de dados via JSON.
 - **Métodos HTTP:**
