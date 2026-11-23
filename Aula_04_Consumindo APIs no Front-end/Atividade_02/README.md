@@ -7,7 +7,7 @@ A atividade contém dois projetos independentes, preparados para publicação em
 - [`Relogio_API/`](./Relogio_API/): API REST em Node.js e Express, com `GET /` para data/hora e `GET /health` para verificação do serviço.
 - [`Relogio_Frontend/`](./Relogio_Frontend/): aplicação React, TypeScript e Vite que consome a API, atualiza os dados periodicamente e permite atualização manual. Seu [README](./Relogio_Frontend/README.md) descreve execução e configuração na Vercel.
 
-As pastas `API_relogio` e `API_relogio_frontend` existentes nesta atividade são gitlinks preexistentes e foram preservadas. O código desta entrega está nas pastas novas acima; não se presume a origem dos gitlinks.
+As versões antigas `API_relogio` e `API_relogio_frontend` foram removidas para manter somente os projetos completos desta entrega.
 
 ## Executar localmente
 
