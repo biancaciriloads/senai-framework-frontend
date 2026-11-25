@@ -10,44 +10,61 @@ Este portfólio reúne os materiais de aula, atividades práticas, projetos e do
 ---
 
 ## 🗂️ Índice completo de entregas
-Os links desta tabela apontam para as cópias e documentos locais deste repositório. Deploys remotos não serão feitos nesta etapa; a lista de pastas e plataformas pendentes está indicada abaixo. URLs antigas não são tratadas como publicação da versão atual.
+Os links desta tabela apontam para as cópias e documentos locais deste repositório. A coluna Publicação e a seção de deploys pendentes registram o estado conhecido. URLs antigas de templates não são tratadas como publicação da versão atual.
 
 | Aula | Atividade / projeto | Código e documentação local | Publicação |
 | :--- | :--- | :--- | :--- |
-| **Aula 01** | Atividade 01 — Jogo de Adivinhação (Vanilla JS) | [Aplicação e README](<Aula_01_Apresentação da Disciplina e Contextualização/Atividade_01_VanillaJS/>) | Deploy anterior; verificar antes de reutilizar |
+| **Aula 01** | Atividade 01 — Jogo de Adivinhação (Vanilla JS) | [Aplicação e README](<Aula_01_Apresentação da Disciplina e Contextualização/Atividade_01_VanillaJS/>) | URL registrada: [Vercel](https://senai-projeto-vanilla-js-rho.vercel.app/); revalidar |
 | **Aula 01** | Atividade 02 — Relatório técnico sobre React | [PDF, fonte HTML e README](<Aula_01_Apresentação da Disciplina e Contextualização/Atividade_02_Relatorio_React/>) | Não se aplica |
-| **Aula 02** | Atividade 01 — Projeto React com Phaser | [Projeto e instruções](<Aula_02_Configuração do Ambiente de Desenvolvimento/Atividade_01_Projeto_React/>) | Deploy anterior; verificar antes de reutilizar |
-| **Aula 03** | Projeto 02 — Atendimento hospitalar com Vue | [Código e README](<Aula_03_Projetos com Frameworks Front-end/Projeto_02_Vue/>) | Versão atual pendente; deploy anterior de template não corresponde |
-| **Aula 03** | Projeto 03 — Atendimento hospitalar com Angular | [Código e README](<Aula_03_Projetos com Frameworks Front-end/Projeto_03_Angular/>) | Versão atual pendente; deploy anterior de dashboard de clima não corresponde |
-| **Aula 03** | Projeto 04 — Atendimento hospitalar com Next.js | [Código e README](<Aula_03_Projetos com Frameworks Front-end/Projeto_04_Nextjs/>) | Versão atual pendente; deploy anterior de template não corresponde |
+| **Aula 02** | Atividade 01 — Projeto React com Phaser | [Projeto e instruções](<Aula_02_Configuração do Ambiente de Desenvolvimento/Atividade_01_Projeto_React/>) | URL registrada: [Vercel](https://projeto-react-01-three.vercel.app/); revalidar |
+| **Aula 03** | Projeto 02 — Atendimento hospitalar com Vue | [Código e README](<Aula_03_Projetos com Frameworks Front-end/Projeto_02_Vue/>) | Deploy da versão local pendente; URL antiga é de template |
+| **Aula 03** | Projeto 03 — Atendimento hospitalar com Angular | [Código e README](<Aula_03_Projetos com Frameworks Front-end/Projeto_03_Angular/>) | Deploy da versão local pendente; URL antiga é de dashboard |
+| **Aula 03** | Projeto 04 — Atendimento hospitalar com Next.js | [Código e README](<Aula_03_Projetos com Frameworks Front-end/Projeto_04_Nextjs/>) | Deploy da versão local pendente; URL antiga é de template |
 | **Aula 04** | Atividade 01 — Pesquisa de aplicações que consomem APIs | [Pesquisa em Markdown](<Aula_04_Consumindo APIs no Front-end/Atividade_01.md>) | Não se aplica |
 | **Aula 04** | Atividade 02 — Relógio com API e frontend React | [API, frontend, testes, evidências e instruções](<Aula_04_Consumindo APIs no Front-end/Atividade_02/>) | Pendente; checklist nos READMEs da atividade |
 | **Aula 05** | Gerenciador de Notas — API Express e frontend React | [Código, testes e instruções](<Aula_05_Consumindo APIs no Front-end/Atividade_aula05/>) | Pendente; checklist no README da atividade |
-| **Aula 06** | Projeto Integrador — Atende+ | [Escopo, backlog, histórias, Kanban e README](<Aula_06_Projetos_Front-end/Projeto_Integrador_AtendeMais/>) | Não se aplica; planejamento local |
-| **Aula 07** | Atividade 01 — Box Model e Flexbox | [Demonstrações e README](<Aula_07_Frameworks_CSS/Atividade_01_Box_Model_Flexbox/>) | Pendente; checklist no README da atividade |
+| **Aula 06** | Projeto Integrador — análise de gestão do SGA | [Documentação local da inspeção SGA](<Aula_06_Projetos_Front-end/Projeto_Integrador_SGA/>) | Documentação não exige deploy; aplicação SGA externa: [sga-iota.vercel.app](https://sga-iota.vercel.app) |
+| **Aula 07** | Atividade 01 — Box Model e Flexbox | [Demonstrações e README](<Aula_07_Frameworks_CSS/Atividade_01_Box_Model_Flexbox/>) | Página estática; sem URL publicada |
 | **Aula 07** | Atividade 02 — Agenda com Tailwind CSS | [Aplicação, evidências e README](<Aula_07_Frameworks_CSS/Atividade_02_Tailwind/>) | Pendente; checklist no README da atividade |
-| **Aula 08** | Projeto React — PixelPlay | [Código e README](<Aula_08_Projeto_React/>) | Pendente; checklist no README da atividade |
-| **Aula 09** | Projeto React 02 — Mural Descobertas | [Código e README](<Aula_09_Projeto_React_02/>) | Pendente; checklist no README da atividade |
+| **Aula 08** | Projeto React — PixelPlay | [Código e README](<Aula_08_Projeto_React/>) | Deploy pendente |
+| **Aula 09** | Projeto React 02 — Mural Descobertas | [Código e README](<Aula_09_Projeto_React_02/>) | Deploy pendente |
+| **Hackathon** | Mesa Circular — compartilhamento comunitário de alimentos | [Aplicação e roteiro](<Hackathon_Conecta_Sobras/>) · [README](<Hackathon_Conecta_Sobras/README.md>) | Aplicação SPA; deploy Vercel pendente |
 
-### Pastas pendentes de deploy manual
+### Links de publicação encontrados
 
-Configure cada pasta indicada como **Root Directory** do serviço. As URLs ficam para preenchimento após os deploys manuais.
+Os endereços abaixo estão registrados nos READMEs locais; não foram revalidados nesta atualização.
 
-| Aplicação | Pasta do projeto | Plataforma | URL |
+| Aplicação | Repositório | Pasta local | Deploy registrado |
 | :--- | :--- | :--- | :--- |
-| Jogo de Adivinhação | [Atividade_01_VanillaJS](<Aula_01_Apresentação da Disciplina e Contextualização/Atividade_01_VanillaJS/>) | Vercel | [ ] inserir após deploy |
-| Projeto React com Phaser | [Atividade_01_Projeto_React](<Aula_02_Configuração do Ambiente de Desenvolvimento/Atividade_01_Projeto_React/>) | Vercel | [ ] inserir após deploy |
-| Projeto Vue | [Projeto_02_Vue](<Aula_03_Projetos com Frameworks Front-end/Projeto_02_Vue/>) | Vercel | [ ] inserir após deploy |
-| Projeto Angular | [Projeto_03_Angular](<Aula_03_Projetos com Frameworks Front-end/Projeto_03_Angular/>) | Vercel | [ ] inserir após deploy |
-| Projeto Next.js | [Projeto_04_Nextjs](<Aula_03_Projetos com Frameworks Front-end/Projeto_04_Nextjs/>) | Vercel | [ ] inserir após deploy |
-| API do Relógio | [Relogio_API](<Aula_04_Consumindo APIs no Front-end/Atividade_02/Relogio_API/>) | Render | [ ] inserir após deploy |
-| Frontend do Relógio | [Relogio_Frontend](<Aula_04_Consumindo APIs no Front-end/Atividade_02/Relogio_Frontend/>) | Vercel | [ ] inserir após deploy |
-| API do Gerenciador de Notas | [projeto_notas_api](<Aula_05_Consumindo APIs no Front-end/Atividade_aula05/projeto_notas_api/>) | Render | [ ] inserir após deploy |
-| Frontend do Gerenciador de Notas | [projeto_notas_front](<Aula_05_Consumindo APIs no Front-end/Atividade_aula05/projeto_notas_front/>) | Vercel | [ ] inserir após deploy |
-| Demonstrações de Box Model e Flexbox | [Atividade_01_Box_Model_Flexbox](<Aula_07_Frameworks_CSS/Atividade_01_Box_Model_Flexbox/>) | Vercel | [ ] inserir após deploy |
-| Agenda Atende+ com Tailwind | [Atividade_02_Tailwind](<Aula_07_Frameworks_CSS/Atividade_02_Tailwind/>) | Vercel | [ ] inserir após deploy |
-| PixelPlay | [Aula_08_Projeto_React](<Aula_08_Projeto_React/>) | Vercel | [ ] inserir após deploy |
-| Mural Descobertas | [Aula_09_Projeto_React_02](<Aula_09_Projeto_React_02/>) | Vercel | [ ] inserir após deploy |
+| Jogo de Adivinhação | [biancaciriloads/senai-projeto-vanilla-js](https://github.com/biancaciriloads/senai-projeto-vanilla-js) | [Aula 01](<Aula_01_Apresentação da Disciplina e Contextualização/Atividade_01_VanillaJS/>) | [Vercel](https://senai-projeto-vanilla-js-rho.vercel.app/) |
+| Projeto React com Phaser | [biancaciriloads/projeto-react-01](https://github.com/biancaciriloads/projeto-react-01) | [Aula 02](<Aula_02_Configuração do Ambiente de Desenvolvimento/Atividade_01_Projeto_React/>) | [Vercel](https://projeto-react-01-three.vercel.app/) |
+| Projeto Integrador SGA (externo) | [edilainesolde/SGA](https://github.com/edilainesolde/SGA) | [Documentação local](<Aula_06_Projetos_Front-end/Projeto_Integrador_SGA/>) | [Vercel](https://sga-iota.vercel.app/) — não é deploy desta cópia |
+| Hackathon — Mesa Circular | [biancaciriloads/senai-framework-frontend](https://github.com/biancaciriloads/senai-framework-frontend) · Referência: [guibuenoc/hackthon-frameworks](https://github.com/guibuenoc/hackthon-frameworks) | [Hackathon_Conecta_Sobras](<Hackathon_Conecta_Sobras/>) | Vercel: **pendente de publicação** |
+
+### Deploys pendentes ou incompletos
+
+| Aplicação/serviço | Pasta local | Plataforma indicada | URL |
+| :--- | :--- | :--- | :--- |
+| Painel atual Vue | [Projeto_02_Vue](<Aula_03_Projetos com Frameworks Front-end/Projeto_02_Vue/>) | Vercel | inserir após deploy |
+| Painel atual Angular | [Projeto_03_Angular](<Aula_03_Projetos com Frameworks Front-end/Projeto_03_Angular/>) | Vercel | inserir após deploy |
+| Painel atual Next.js | [Projeto_04_Nextjs](<Aula_03_Projetos com Frameworks Front-end/Projeto_04_Nextjs/>) | Vercel | inserir após deploy |
+| API do Relógio | [Relogio_API](<Aula_04_Consumindo APIs no Front-end/Atividade_02/Relogio_API/>) | Render | inserir após deploy |
+| Frontend do Relógio | [Relogio_Frontend](<Aula_04_Consumindo APIs no Front-end/Atividade_02/Relogio_Frontend/>) | Vercel | inserir após deploy |
+| API do Gerenciador de Notas | [projeto_notas_api](<Aula_05_Consumindo APIs no Front-end/Atividade_aula05/projeto_notas_api/>) | Render | inserir após deploy |
+| Frontend do Gerenciador de Notas | [projeto_notas_front](<Aula_05_Consumindo APIs no Front-end/Atividade_aula05/projeto_notas_front/>) | Vercel | inserir após deploy |
+| Página Box Model/Flexbox | [Atividade_01_Box_Model_Flexbox](<Aula_07_Frameworks_CSS/Atividade_01_Box_Model_Flexbox/>) | Vercel | inserir após deploy |
+| Agenda Atende+ com Tailwind | [Atividade_02_Tailwind](<Aula_07_Frameworks_CSS/Atividade_02_Tailwind/>) | Vercel | inserir após deploy |
+| PixelPlay | [Aula_08_Projeto_React](<Aula_08_Projeto_React/>) | Vercel | inserir após deploy |
+| Mural Descobertas | [Aula_09_Projeto_React_02](<Aula_09_Projeto_React_02/>) | Vercel | inserir após deploy |
+| Hackathon — Mesa Circular | [Aplicação React/Vite SPA](<Hackathon_Conecta_Sobras/>) | Vercel | Pendente; inserir URL após publicar |
+
+Os deploys pendentes identificados estão listados na tabela acima.
+
+### Hackathon — Mesa Circular
+
+A aplicação local foi organizada em [Hackathon_Conecta_Sobras](<Hackathon_Conecta_Sobras/>), com a [documentação de execução e escopo](<Hackathon_Conecta_Sobras/README.md>) e o [roteiro de demonstração](<Hackathon_Conecta_Sobras/ROTEIRO.md>). A referência [guibuenoc/hackthon-frameworks](https://github.com/guibuenoc/hackthon-frameworks) e o SGA foram consultados apenas para leitura; nenhum repositório externo foi alterado. O deploy é necessário por se tratar de uma SPA, mas ainda não foi publicado. **URL Vercel: pendente.**
+
+Consulte também o [Glossário](./GLOSSARIO.md) e o [README do Hackathon](<Hackathon_Conecta_Sobras/README.md>) para requisitos e próximos passos dessa aplicação.
 
 ### Materiais de aula e plano de ensino
 
@@ -182,8 +199,8 @@ Utilização do Postman para testes manuais, organização de coleções de requ
 ## Aula 06 - Projetos Front-end
 
 ### Atividade documentada
-- [Projeto Integrador Atende+: escopo, backlog priorizado, histórias, Kanban, branches e Definition of Done](<Aula_06_Projetos_Front-end/Projeto_Integrador_AtendeMais/>)
-- O Kanban foi registrado em Markdown no repositório local; nenhum board externo, repositório ou deploy foi criado nesta atividade.
+- [Projeto Integrador SGA: evidências do repositório, backlog/issues, prioridades, milestones, branches e sugestões de gestão](<Aula_06_Projetos_Front-end/Projeto_Integrador_SGA/>)
+- O SGA foi somente consultado. A página de GitHub Projects indicava zero boards; o deploy identificado no perfil do projeto é [sga-iota.vercel.app](https://sga-iota.vercel.app). A documentação local distingue fatos encontrados de sugestões, sem afirmar que o board ou o fluxo proposto já existem.
 
 ---
 
