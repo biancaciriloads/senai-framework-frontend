@@ -21,14 +21,14 @@ Os links desta tabela apontam para as cópias e documentos locais deste reposit�
 | **Aula 03** | Projeto 03 — Atendimento hospitalar com Angular | [Código e README](<Aula_03_Projetos com Frameworks Front-end/Projeto_03_Angular/>) | Deploy da versão local pendente; URL antiga é de dashboard |
 | **Aula 03** | Projeto 04 — Atendimento hospitalar com Next.js | [Código e README](<Aula_03_Projetos com Frameworks Front-end/Projeto_04_Nextjs/>) | Deploy da versão local pendente; URL antiga é de template |
 | **Aula 04** | Atividade 01 — Pesquisa de aplicações que consomem APIs | [Pesquisa em Markdown](<Aula_04_Consumindo APIs no Front-end/Atividade_01.md>) | Não se aplica |
-| **Aula 04** | Atividade 02 — Relógio com API e frontend React | [API, frontend, testes, evidências e instruções](<Aula_04_Consumindo APIs no Front-end/Atividade_02/>) | Pendente; checklist nos READMEs da atividade |
-| **Aula 05** | Gerenciador de Notas — API Express e frontend React | [Código, testes e instruções](<Aula_05_Consumindo APIs no Front-end/Atividade_aula05/>) | Pendente; checklist no README da atividade |
+| **Aula 04** | Atividade 02 — Relógio com API e frontend React | [API, frontend, testes, evidências e instruções](<Aula_04_Consumindo APIs no Front-end/Atividade_02/>) | Frontend: [Vercel](https://relogiofrontend.vercel.app) |
+| **Aula 05** | Gerenciador de Notas — API Express e frontend React | [Código, testes e instruções](<Aula_05_Consumindo APIs no Front-end/Atividade_aula05/>) | Frontend: [Vercel](https://projetonotasfront.vercel.app) |
 | **Aula 06** | Projeto Integrador — análise de gestão do SGA | [Documentação local da inspeção SGA](<Aula_06_Projetos_Front-end/Projeto_Integrador_SGA/>) | Documentação não exige deploy; aplicação SGA externa: [sga-iota.vercel.app](https://sga-iota.vercel.app) |
 | **Aula 07** | Atividade 01 — Box Model e Flexbox | [Demonstrações e README](<Aula_07_Frameworks_CSS/Atividade_01_Box_Model_Flexbox/>) | Página estática; sem URL publicada |
-| **Aula 07** | Atividade 02 — Agenda com Tailwind CSS | [Aplicação, evidências e README](<Aula_07_Frameworks_CSS/Atividade_02_Tailwind/>) | Pendente; checklist no README da atividade |
-| **Aula 08** | Projeto React — PixelPlay | [Código e README](<Aula_08_Projeto_React/>) | Deploy pendente |
-| **Aula 09** | Projeto React 02 — Mural Descobertas | [Código e README](<Aula_09_Projeto_React_02/>) | Deploy pendente |
-| **Hackathon** | Mesa Circular — compartilhamento comunitário de alimentos | [Aplicação e roteiro](<Hackathon_Conecta_Sobras/>) · [README](<Hackathon_Conecta_Sobras/README.md>) | Aplicação SPA; deploy Vercel pendente |
+| **Aula 07** | Atividade 02 — Agenda com Tailwind CSS | [Aplicação, evidências e README](<Aula_07_Frameworks_CSS/Atividade_02_Tailwind/>) | [Vercel](https://atividade-02-tailwind.vercel.app) |
+| **Aula 08** | Projeto React — PixelPlay | [Código e README](<Aula_08_Projeto_React/>) | [Vercel](https://aula-08-projetoreact.vercel.app) |
+| **Aula 09** | Projeto React 02 — Mural Descobertas | [Código e README](<Aula_09_Projeto_React_02/>) | [Vercel](https://aula-09-projeto-react-02-sigma.vercel.app) |
+| **Hackathon** | Mesa Circular — compartilhamento comunitário de alimentos | [Aplicação e roteiro](<Hackathon_Conecta_Sobras/>) · [README](<Hackathon_Conecta_Sobras/README.md>) | [Vercel](https://hackathon-conecta-sobras.vercel.app) |
 
 ### Links de publicação encontrados
 
@@ -39,7 +39,7 @@ Os endereços abaixo estão registrados nos READMEs locais; não foram revalidad
 | Jogo de Adivinhação | [biancaciriloads/senai-projeto-vanilla-js](https://github.com/biancaciriloads/senai-projeto-vanilla-js) | [Aula 01](<Aula_01_Apresentação da Disciplina e Contextualização/Atividade_01_VanillaJS/>) | [Vercel](https://senai-projeto-vanilla-js-rho.vercel.app/) |
 | Projeto React com Phaser | [biancaciriloads/projeto-react-01](https://github.com/biancaciriloads/projeto-react-01) | [Aula 02](<Aula_02_Configuração do Ambiente de Desenvolvimento/Atividade_01_Projeto_React/>) | [Vercel](https://projeto-react-01-three.vercel.app/) |
 | Projeto Integrador SGA (externo) | [edilainesolde/SGA](https://github.com/edilainesolde/SGA) | [Documentação local](<Aula_06_Projetos_Front-end/Projeto_Integrador_SGA/>) | [Vercel](https://sga-iota.vercel.app/) — não é deploy desta cópia |
-| Hackathon — Mesa Circular | [biancaciriloads/senai-framework-frontend](https://github.com/biancaciriloads/senai-framework-frontend) · Referência: [guibuenoc/hackthon-frameworks](https://github.com/guibuenoc/hackthon-frameworks) | [Hackathon_Conecta_Sobras](<Hackathon_Conecta_Sobras/>) | Vercel: **pendente de publicação** |
+| Hackathon — Mesa Circular | [biancaciriloads/senai-framework-frontend](https://github.com/biancaciriloads/senai-framework-frontend) · Referência: [guibuenoc/hackthon-frameworks](https://github.com/guibuenoc/hackthon-frameworks) | [Hackathon_Conecta_Sobras](<Hackathon_Conecta_Sobras/>) | [Vercel](https://hackathon-conecta-sobras.vercel.app) |
 
 ### Deploys pendentes ou incompletos
 
@@ -49,20 +49,20 @@ Os endereços abaixo estão registrados nos READMEs locais; não foram revalidad
 | Painel atual Angular | [Projeto_03_Angular](<Aula_03_Projetos com Frameworks Front-end/Projeto_03_Angular/>) | Vercel | inserir após deploy |
 | Painel atual Next.js | [Projeto_04_Nextjs](<Aula_03_Projetos com Frameworks Front-end/Projeto_04_Nextjs/>) | Vercel | inserir após deploy |
 | API do Relógio | [Relogio_API](<Aula_04_Consumindo APIs no Front-end/Atividade_02/Relogio_API/>) | Render | inserir após deploy |
-| Frontend do Relógio | [Relogio_Frontend](<Aula_04_Consumindo APIs no Front-end/Atividade_02/Relogio_Frontend/>) | Vercel | inserir após deploy |
+| Frontend do Relógio | [Relogio_Frontend](<Aula_04_Consumindo APIs no Front-end/Atividade_02/Relogio_Frontend/>) | Vercel | [https://relogiofrontend.vercel.app](https://relogiofrontend.vercel.app) |
 | API do Gerenciador de Notas | [projeto_notas_api](<Aula_05_Consumindo APIs no Front-end/Atividade_aula05/projeto_notas_api/>) | Render | inserir após deploy |
-| Frontend do Gerenciador de Notas | [projeto_notas_front](<Aula_05_Consumindo APIs no Front-end/Atividade_aula05/projeto_notas_front/>) | Vercel | inserir após deploy |
+| Frontend do Gerenciador de Notas | [projeto_notas_front](<Aula_05_Consumindo APIs no Front-end/Atividade_aula05/projeto_notas_front/>) | Vercel | [https://projetonotasfront.vercel.app](https://projetonotasfront.vercel.app) |
 | Página Box Model/Flexbox | [Atividade_01_Box_Model_Flexbox](<Aula_07_Frameworks_CSS/Atividade_01_Box_Model_Flexbox/>) | Vercel | inserir após deploy |
-| Agenda Atende+ com Tailwind | [Atividade_02_Tailwind](<Aula_07_Frameworks_CSS/Atividade_02_Tailwind/>) | Vercel | inserir após deploy |
-| PixelPlay | [Aula_08_Projeto_React](<Aula_08_Projeto_React/>) | Vercel | inserir após deploy |
-| Mural Descobertas | [Aula_09_Projeto_React_02](<Aula_09_Projeto_React_02/>) | Vercel | inserir após deploy |
-| Hackathon — Mesa Circular | [Aplicação React/Vite SPA](<Hackathon_Conecta_Sobras/>) | Vercel | Pendente; inserir URL após publicar |
+| Agenda Atende+ com Tailwind | [Atividade_02_Tailwind](<Aula_07_Frameworks_CSS/Atividade_02_Tailwind/>) | Vercel | [https://atividade-02-tailwind.vercel.app](https://atividade-02-tailwind.vercel.app) |
+| PixelPlay | [Aula_08_Projeto_React](<Aula_08_Projeto_React/>) | Vercel | [https://aula-08-projetoreact.vercel.app](https://aula-08-projetoreact.vercel.app) |
+| Mural Descobertas | [Aula_09_Projeto_React_02](<Aula_09_Projeto_React_02/>) | Vercel | [https://aula-09-projeto-react-02-sigma.vercel.app](https://aula-09-projeto-react-02-sigma.vercel.app) |
+| Hackathon — Mesa Circular | [Aplicação React/Vite SPA](<Hackathon_Conecta_Sobras/>) | Vercel | [https://hackathon-conecta-sobras.vercel.app](https://hackathon-conecta-sobras.vercel.app) |
 
 Os deploys pendentes identificados estão listados na tabela acima.
 
 ### Hackathon — Mesa Circular
 
-A aplicação local foi organizada em [Hackathon_Conecta_Sobras](<Hackathon_Conecta_Sobras/>), com a [documentação de execução e escopo](<Hackathon_Conecta_Sobras/README.md>) e o [roteiro de demonstração](<Hackathon_Conecta_Sobras/ROTEIRO.md>). A referência [guibuenoc/hackthon-frameworks](https://github.com/guibuenoc/hackthon-frameworks) e o SGA foram consultados apenas para leitura; nenhum repositório externo foi alterado. O deploy é necessário por se tratar de uma SPA, mas ainda não foi publicado. **URL Vercel: pendente.**
+A aplicação local foi organizada em [Hackathon_Conecta_Sobras](<Hackathon_Conecta_Sobras/>), com a [documentação de execução e escopo](<Hackathon_Conecta_Sobras/README.md>) e o [roteiro de demonstração](<Hackathon_Conecta_Sobras/ROTEIRO.md>). A referência [guibuenoc/hackthon-frameworks](https://github.com/guibuenoc/hackthon-frameworks) e o SGA foram consultados apenas para leitura; nenhum repositório externo foi alterado. O deploy foi realizado na Vercel: [https://hackathon-conecta-sobras.vercel.app](https://hackathon-conecta-sobras.vercel.app).
 
 Consulte também o [Glossário](./GLOSSARIO.md) e o [README do Hackathon](<Hackathon_Conecta_Sobras/README.md>) para requisitos e próximos passos dessa aplicação.
 
@@ -148,6 +148,7 @@ Padrão **`MAJOR.MINOR.PATCH`**:
 ### Atividades documentadas
 - [Atividade 01: pesquisa de projetos que consomem APIs](<Aula_04_Consumindo APIs no Front-end/Atividade_01.md>)
 - [Atividade 02: API de data e hora com frontend React](<Aula_04_Consumindo APIs no Front-end/Atividade_02/>)
+- Frontend do Relógio deployado: [https://relogiofrontend.vercel.app](https://relogiofrontend.vercel.app)
 
 ### 1. Conceitos de API e Protocolo HTTP
 - **REST:** Estilo arquitetural cliente-servidor *stateless* baseado em URIs e transferência de dados via JSON.
@@ -181,7 +182,7 @@ app.listen(3000, () => console.log('Servidor rodando na porta 3000'));
 
 ### Atividade documentada
 - [Gerenciador de notas: API Express, frontend React, testes e collection Postman](<Aula_05_Consumindo APIs no Front-end/Atividade_aula05/>)
-- Os links dos repositórios e deploys serão preenchidos no README da atividade após publicação manual.
+- Frontend deployado: [https://projetonotasfront.vercel.app](https://projetonotasfront.vercel.app)
 
 ### 1. Implementando um CRUD Completo
 Evolução do projeto para um aplicativo de notas (*Notes App*) persistido em arquivos locais (`data.json`) utilizando as operações:
@@ -211,7 +212,7 @@ Utilização do Postman para testes manuais, organização de coleções de requ
 
 ### Atividade 02 documentada
 - [Agenda Atende+ com Tailwind CSS, funcionalidades, evidências e catálogo de classes](<Aula_07_Frameworks_CSS/Atividade_02_Tailwind/>)
-- Os links do repositório e do deploy serão preenchidos no README da atividade após publicação manual.
+- Deploy realizado: [https://atividade-02-tailwind.vercel.app](https://atividade-02-tailwind.vercel.app)
 
 ---
 
@@ -219,7 +220,7 @@ Utilização do Postman para testes manuais, organização de coleções de requ
 
 ### Atividade documentada
 - [PixelPlay: biblioteca interativa que demonstra JSX, componentes, props, listas com keys e renderização condicional](<Aula_08_Projeto_React/>)
-- Os links do repositório e da aplicação serão preenchidos no README da atividade após publicação manual.
+- Deploy realizado: [https://aula-08-projetoreact.vercel.app](https://aula-08-projetoreact.vercel.app)
 
 ---
 
@@ -227,9 +228,9 @@ Utilização do Postman para testes manuais, organização de coleções de requ
 
 ### Atividade documentada
 - [Descobertas: mural React com estado, formulário, useEffect, consumo de API e React Router](<Aula_09_Projeto_React_02/>)
-- Os links do repositório e da aplicação serão preenchidos no README da atividade após publicação manual.
+- Deploy realizado: [https://aula-09-projeto-react-02-sigma.vercel.app](https://aula-09-projeto-react-02-sigma.vercel.app)
 
 ---
 
 ## 🚀 Conclusão e Entrega das Atividades
-Os links de repositórios e deploys pendentes serão adicionados aos READMEs das respectivas atividades após a publicação manual. A matriz acima identifica as pastas e plataformas para essa etapa.
+Os deploys das atividades das Aulas 04 (Relógio Frontend), 05 (Projeto Notas Frontend), 07 (Atividade 02 Tailwind), 08 (PixelPlay), 09 (Mural Descobertas) e Hackathon (Mesa Circular) foram realizados na Vercel. Os links estão registrados nas tabelas acima e nos READMEs das respectivas atividades. As APIs (Render) e os projetos Vue/Angular/Next.js da Aula 03 e a Atividade 01 da Aula 07 (Box Model/Flexbox) permanecem com deploy pendente.
